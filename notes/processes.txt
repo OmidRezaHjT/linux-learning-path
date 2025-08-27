@@ -27,3 +27,41 @@ English: **systemctl is the main command to manage services in systemd (start, s
 ## SysV
 English: **SysVinit is the older init system. Its control scripts are located in /etc/init.d/ and are similar to general bash scripts**
 **فارسی: **SysVinit سیستم init قدیمی‌تر است. فایل‌های کنترلی آن در /etc/init.d/ قرار دارند و شبیه اسکریپت‌های عادی bash هستند
+
+## runlevels
+English: **Runlevels define which tasks or services are active in a Linux system at a given state, like different stages of system operation**
+**فارسی: **Runlevelها مشخص می‌کنند در هر وضعیت یک سیستم لینوکس چه کارها یا سرویس‌هایی فعال هستند، مثل مراحل مختلف عملکرد سیستم
+
+You can switch to special targets in systemd:
+rescue: mounts local filesystems, no networking, root only (maintenance).
+emergency: only root filesystem in read-only, no networking, root only.
+reboot: restarts the system.
+halt: stops all processes and CPU.
+poweroff: like halt but also sends ACPI shutdown signal.
+
+
+## SysV runlevels
+English: **On SysVinit, different stages of system operation could be defined using runlevels**
+**فارسی: **در SysVinit می‌شد مراحل مختلف عملکرد سیستم را با استفاده از runlevelها تعریف کرد.
+REDHAT:
+0- Shutdown
+1- Single-user mode (recovery); Also called S or s
+2- Multi-user without networking
+3- Multi-user with networking
+4- to be customized by the admin
+5- Multi-user with networking and graphics
+6- Reboot
+DEBIAN:
+0- Shutdown
+1- Single-user mode
+2- Multi-user mode with graphics
+6- Reboot
+
+
+
+## 
+English: ** **
+**فارسی: ** س
+## 
+English: ** **
+**فارسی: ** س

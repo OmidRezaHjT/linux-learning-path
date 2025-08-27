@@ -52,3 +52,7 @@ English: **/proc is a virtual filesystem in RAM where the kernel stores settings
 English: **The kernel needs drivers to work with hardware, which are stored in initrd or initramfs and used during boot**
 **فارسی: **کرنل برای کار با سخت‌افزار به درایورها نیاز دارد که در initrd یا initramfs ذخیره شده و هنگام بوت استفاده می‌شوند
 
+#Advanced Configuration and Power Interface (ACPI)
+English: **ACPI  is a standard that lets the operating system control hardware and power management more efficiently than BIOS.**
+**فارسی: **ACPI  یه استاندارده که به سیستم‌عامل اجازه می‌ده کنترل سخت‌افزار و مدیریت انرژی رو دقیق‌تر از BIOS انجام بده
+
