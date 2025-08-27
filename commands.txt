@@ -76,3 +76,34 @@ English: **Remove a kernel module from the system**
 ## modinfo
 English: **Show information about a kernel module (version, dependencies, author, etc.)**
 **فارسی: **نمایش اطلاعات درباره یک ماژول کرنل (نسخه، وابستگی‌ها، نویسنده و …)
+
+## dmesg
+English: **dmesg shows kernel messages but does not keep the boot process log permanently; you can use journalctl -b to view boot logs.**
+**فارسی: **دستور dmesg پیام‌های کرنل را نشان می‌دهد اما لاگ پروسس بوت را نگه نمی‌دارد؛ برای دیدن لاگ بوت می‌توان از journalctl -b استفاده کرد
+
+## pstree
+English: **pstree shows running processes in a tree-like structure, displaying parent-child relationships**
+**فارسی: **این دستور فرآیندهای در حال اجرا را به صورت درختی نشان می‌دهد و رابطه والد و فرزند بین آن‌ها را نمایش می‌دهد
+
+## systemctl
+English: **systemctl is the main command to manage services in systemd (start, stop, enable, disable, check status)**
+**فارسی: **دستور systemctl فرمان اصلی برای مدیریت سرویس‌ها در systemd است (اجرا، توقف، فعال‌سازی، غیرفعال‌سازی، بررسی وضعیت)
+
+## systemctl list-units 
+English: **Lists all active units (services, sockets, targets, etc.) managed by systemd**
+**فارسی: **لیست تمام یونیت‌های فعال (سرویس‌ها، سوکت‌ها، تارگت‌ها و …) که توسط systemd مدیریت می‌شوند
+
+## systemctl get-default
+English: **Shows the default target, i.e., which group of services the system starts by default (like multi-user or graphical)**
+**فارسی: **تارگت پیش‌فرض سیستم را نشان می‌دهد؛ یعنی گروهی از سرویس‌ها که سیستم به طور پیش‌فرض اجرا می‌کند (مثلاً multi-user یا graphical)
+
+## systemctl is-system-[state]
+English: **checks the overall state of the system. You replace [state] with one option at a time (running, degraded, maintenance, initializing, starting, stopping) to see if the system is in that specific state**
+**فارسی: **این دستور وضعیت کلی سیستم را بررسی می‌کند. [state] را هر بار با یکی از گزینه‌ها (running، degraded، maintenance، initializing، starting، stopping) جایگزین می‌کنید تا مشخص شود سیستم در آن وضعیت خاص است یا خیر
+
+## journalctl
+English: **journalctl shows logs collected by systemd’s journal, including system, kernel, service, and boot logs (e.g., journalctl -k for kernel, journalctl -b for boot)**
+**فارسی: **دستور journalctl لاگ‌های جمع‌آوری‌شده توسط journal در systemd را نمایش می‌دهد، از جمله لاگ‌های سیستم، کرنل، سرویس‌ها و بوت (مثلاً journalctl -k برای کرنل و journalctl -b برای بوت)
+
+
+

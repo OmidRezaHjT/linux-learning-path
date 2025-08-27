@@ -47,3 +47,8 @@ English: **D-Bus is a message bus system in Linux that allows applications to co
 ## proc directory
 English: **/proc is a virtual filesystem in RAM where the kernel stores settings and properties. It shows information about IRQs, I/O ports, DMA, processes, and network settings**
 **فارسی: **/proc یک سیستم فایل مجازی در RAM است که کرنل تنظیمات و ویژگی‌ها را در آن نگه می‌دارد. اطلاعاتی درباره IRQها، پورت‌های I/O، DMA، فرآیندها و تنظیمات شبکه ارائه می‌دهد
+
+## Kernel
+English: **The kernel needs drivers to work with hardware, which are stored in initrd or initramfs and used during boot**
+**فارسی: **کرنل برای کار با سخت‌افزار به درایورها نیاز دارد که در initrd یا initramfs ذخیره شده و هنگام بوت استفاده می‌شوند
+

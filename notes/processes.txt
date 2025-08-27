@@ -1,0 +1,29 @@
+# Processes
+
+## Boot Process
+English: **1)Motherboard runs POST (Power-On Self-Test)/2)Motherboard loads the bootloader/3)Bootloader loads the Linux kernel./4)Kernel initializes the system and root filesystem./5)Init program starts services (web, GUI, networking, etc.)**
+**فارسی: **۱) مادربورد تست اولیه (POST) را اجرا می‌کند./۲)مادربورد بوت‌لودر را بارگذاری می‌کند./۳) بوت‌لودر کرنل لینوکس را بارگذاری می‌کند./۴) کرنل سیستم و فایل‌سیستم ریشه را مقداردهی می‌کند./۵) برنامه init سرویس‌ها را اجرا می‌کند (وب، رابط گرافیکی، شبکه و …).
+
+## Bootloader
+English: **Bootloader sets up minimal hardware and runs the OS; on GNU/Linux, GRUB is used, which can run any program but usually starts the OS**
+**فارسی: **فارسی: بوت‌لودر حداقل سخت‌افزار لازم را آماده کرده و سیستم‌عامل را اجرا می‌کند؛ در GNU/Linux معمولاً از GRUB استفاده می‌شود که می‌تواند هر برنامه‌ای را اجرا کند اما معمولاً سیستم‌عامل را راه‌اندازی می‌کند.
+
+## Kernel
+English: **The kernel, the core of the OS, is loaded by the bootloader into memory and can receive parameters from GRUB for modes or settings**
+**فارسی: **کرنل، هسته سیستم‌عامل، توسط بوت‌لودر در حافظه بارگذاری می‌شود و می‌تواند پارامترهایی از GRUB برای حالت‌ها یا تنظیمات دریافت کند
+
+## init
+English: **After kernel initialization, the init system starts all necessary services, daemons, and programs in order, managing dependencies. Admins can control services later. Common init systems are SysVinit (older Unix style), Upstart (event-based, mostly replaced), and Systemd (modern, parallel service startup). Init always has PID 1**
+**فارسی: **بعد از مقداردهی کرنل، سیستم init سرویس‌ها، دیمون‌ها و برنامه‌های لازم را به ترتیب و با مدیریت وابستگی اجرا می‌کند. مدیر سیستم می‌تواند سرویس‌ها را بعداً کنترل کند. انواع رایج init شامل SysVinit (قدیمی)، Upstart (مبتنی بر رویداد، بیشتر جایگزین شده) و Systemd (مدرن، اجرای موازی سرویس‌ها) هستند. فرآیند init همیشه PID ۱ دارد
+
+## systemd
+English: **systemd is the modern init system used in most Linux distros; it manages services, dependencies, and can start processes in parallel**
+**فارسی: **systemd سیستم init مدرن است که در بیشتر توزیع‌های لینوکس استفاده می‌شود؛ سرویس‌ها و وابستگی‌ها را مدیریت کرده و می‌تواند پردازش‌ها را به صورت موازی اجرا کند
+
+## systemctl
+English: **systemctl is the main command to manage services in systemd (start, stop, enable, disable, check status)**
+**فارسی: **دستور systemctl فرمان اصلی برای مدیریت سرویس‌ها در systemd است (اجرا، توقف، فعال‌سازی، غیرفعال‌سازی، بررسی وضعیت)
+
+## SysV
+English: **SysVinit is the older init system. Its control scripts are located in /etc/init.d/ and are similar to general bash scripts**
+**فارسی: **SysVinit سیستم init قدیمی‌تر است. فایل‌های کنترلی آن در /etc/init.d/ قرار دارند و شبیه اسکریپت‌های عادی bash هستند
