@@ -1,0 +1,78 @@
+# Commands
+
+## ls
+**English:** List files and directories in the current folder.  
+**فارسی:** لیست گرفتن از فایل‌ها و دایرکتوری‌های موجود در پوشه فعلی.
+
+## lsusb
+English: **List all USB devices connected to the system**
+**فارسی: **لیست تمام دستگاه‌های USB متصل به سیستم
+
+## lspci
+English: **List all PCI devices (like graphics cards, network cards)**
+**فارسی: **لیست تمام دستگاه‌های PCI (مثل کارت گرافیک، کارت شبکه)
+
+## lsblk
+English: **List information about all block devices (disks, partitions)**
+**فارسی: **نمایش اطلاعات همه دستگاه‌های بلاک (هارد، پارتیشن‌ها)
+
+## lshw
+English: **Display detailed hardware information of the system**
+**فارسی: **نمایش اطلاعات سخت‌افزاری دقیق سیستم
+
+## lsmod
+English: **Shows kernel modules. They are located at /lib/modules**
+**فارسی: **نشان دادن ماژول های کرنل
+
+## cat
+English: **Display the content of a file**
+**فارسی: **نمایش محتوای یک فایل
+
+## mkdir
+English: **Create a new directory**
+**فارسی: **ایجاد یک پوشه جدید
+
+## rmdir
+English: **Remove an empty directory**
+**فارسی: **حذف یک پوشه خالی
+
+## rm
+English: **Remove a file or directory**
+**فارسی: **حذف یک فایل یا پوشه
+
+## touch
+English: **Create a new empty file or update its timestamp**
+**فارسی: **ایجاد یک فایل خالی یا به‌روزرسانی زمان آخرین تغییر آن
+
+## cp
+English: **Copy a file or directory**
+**فارسی: **کپی کردن یک فایل یا پوش
+
+## mv
+English: **Move or rename a file or directory**
+**فارسی: **جابجا کردن یا تغییر نام یک فایل یا پوشه
+
+## pwd
+English: **Show the current working directory**
+**فارسی: **نمایش مسیر پوشه فعلی
+
+## echo
+English: **Print text to the terminal or write to a file**
+**فارسی: **چاپ متن در ترمینال یا نوشتن در فایل
+
+## insmod
+English: **Insert a kernel module into the system**
+**فارسی: **اضافه کردن یک ماژول کرنل به سیستم
+
+## modprobe
+(Better option)
+English: **Insert or remove a kernel module, handling dependencies automatically**
+**فارسی: **اضافه یا حذف یک ماژول کرنل با مدیریت خودکار وابستگی‌ها
+
+## rmmod
+English: **Remove a kernel module from the system**
+**فارسی: **حذف یک ماژول کرنل از سیستم
+
+## modinfo
+English: **Show information about a kernel module (version, dependencies, author, etc.)**
+**فارسی: **نمایش اطلاعات درباره یک ماژول کرنل (نسخه، وابستگی‌ها، نویسنده و …)

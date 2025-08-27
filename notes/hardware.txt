@@ -1,0 +1,49 @@
+# Hardware Basics
+
+## OS
+English: ** An operating system (OS) manages hardware and software resources and provides services for programs.**
+**فارسی: **سیستم‌عامل منابع سخت‌افزاری و نرم‌افزاری را مدیریت کرده و خدماتی برای برنامه‌ها فراهم می‌کند 
+
+## Firmware
+**English:** Firmware is the software embedded in hardware that controls its operation. Motherboards require firmware to function properly.**
+**فارسی: ** فرمور(میان افزار) نرم‌افزاری است که در سخت‌افزار قرار دارد و عملکرد آن را کنترل می‌کند. مادربوردها برای کارکرد صحیح به فرمور نیاز دارند
+
+## BIOS
+English: **The old boot method uses MBR and a text menu, but it's not enough for modern systems, which use a two-step boot process.**
+**فارسی: ** روش قدیمی بوت با ام بی آر و منوی متنی کار می‌کند، اما برای سیستم‌های مدرن کافی نیست و اغلب از فرآیند بوت دو مرحله‌ای استفاده می‌شود
+
+## UEFI
+English: **EFI (Extensible Firmware Interface) started by Intel in 1998 and is now standard. It uses the EFI System Partition (ESP) with FAT. On Linux, it’s at /boot/efi and files have a .efi extension. Each bootloader must be registered.**
+**فارسی: ** EFI (رابط فرمور قابل توسعه) توسط اینتل در ۱۹۹۸ شروع شد و اکنون استاندارد است. از پارتیشن EFI (ESP) با سیستم فایل FAT استفاده می‌کند. در لینوکس در /boot/efi قرار دارد و فایل‌ها پسوند .efi دارند. هر بوت‌لودر باید ثبت شود
+
+## PCI
+English: **PCI allows the user to add extra components to the motherboard, like internal HDDs (PATA, SATA, SCSI), network cards, audio cards, and more.**
+**فارسی: ** PCI به کاربر اجازه می‌دهد قطعات اضافی را به مادربورد متصل کند، مانند هاردهای داخلی (PATA، SATA، SCSI)، کارت شبکه، کارت صدا و غیره
+
+## SSD vs HDD
+English: **SSDs are faster, quieter, smaller, and use less energy. HDDs are cheaper, offer more storage, and easier data recovery. SSDs have no moving parts and can last 10+ years, while HDDs usually last 3-5 years**
+**فارسی: ** 
+
+## Network cards vs Wireless cards
+English: **NICs provide wired Ethernet connectivity via RJ45, while wireless cards enable Wi-Fi access on computers, including industrial devices**
+**فارسی: ** (NIC) اتصال کابلی اترنت از طریق RJ45 فراهم می‌کند و کارت‌های وایرلس اتصال بی‌سیم (Wi-Fi) را روی کامپیوترها، حتی دستگاه‌های صنعتی، ممکن می‌سازند
+
+## GPIO (General Purpose Input/Output)
+English: **GPIO allows the computer to control or communicate with other devices.**
+**فارسی: **به کامپیوتر اجازه می‌دهد تا دستگاه‌های دیگر را کنترل یا با آن‌ها ارتباط برقرار کند
+
+## Sysfs
+English: **Sysfs is a virtual file system in Linux that provides information about hardware and kernel subsystems, and allows configuring devices. It is mounted at /sys**
+**فارسی: ** Sysfs یک سیستم فایل مجازی در لینوکس است که اطلاعات سخت‌افزار و زیرسیستم‌های کرنل را نمایش می‌دهد و امکان پیکربندی دستگاه‌ها را فراهم می‌کند. در مسیر /sys مانت می‌شود
+
+## udev
+English: **udev is the device manager in Linux that handles /dev. It manages device nodes, reacts to hardware events, and allows custom rules to control device names and actions when devices are connected**
+**فارسی: ** udev مدیر دستگاه در لینوکس است که دایرکتوری /dev را مدیریت می‌کند. این ابزار نودهای دستگاه را کنترل می‌کند، به رویدادهای سخت‌افزاری واکنش نشان می‌دهد و اجازه می‌دهد نام و رفتار دستگاه‌ها هنگام اتصال به سیستم شخصی‌سازی شود.
+
+## dbus
+English: **D-Bus is a message bus system in Linux that allows applications to communicate, coordinate processes, and launch services on demand**
+**فارسی: **D-Bus یک سیستم پیام‌رسان در لینوکس است که به برنامه‌ها امکان می‌دهد با هم ارتباط داشته باشند، فرآیندها را هماهنگ کنند و سرویس‌ها را به‌صورت درخواستی اجرا کنند
+
+## proc directory
+English: **/proc is a virtual filesystem in RAM where the kernel stores settings and properties. It shows information about IRQs, I/O ports, DMA, processes, and network settings**
+**فارسی: **/proc یک سیستم فایل مجازی در RAM است که کرنل تنظیمات و ویژگی‌ها را در آن نگه می‌دارد. اطلاعاتی درباره IRQها، پورت‌های I/O، DMA، فرآیندها و تنظیمات شبکه ارائه می‌دهد
