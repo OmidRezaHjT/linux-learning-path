@@ -1,0 +1,25 @@
+# filesystem
+
+## Unix directories
+English and Farsi: **
+	bin: Essential command binaries / فایل‌های باینری ضروری دستورات
+	boot: Static files of the boot loader/ فایل‌های استاتیک بوت لودر
+	dev: Device files/ فایل‌های دستگاه
+	etc: Host-specific system configuration/ پیکربندی سیستم مخصوص میزبان
+	home: Home directory of the users / هوم دایرکتوری یوزر ها
+	lib: Essential shared libraries and kernel modules / کتابخانه‌های اشتراکی ضروری و ماژول‌های هسته
+	media: Mount point for removable media/ جایی برای مانت کردن رسانه های قابل جابجایی
+	mnt: Mount point for mounting a filesystem temporarily/ نقطه اتصال برای نصب موقت یک سیستم فایل
+	opt: Add-on application software packages/ بسته‌های نرم‌افزاری کاربردی افزونه
+	root: Home directory of the root user/ هوم دایرکتوری یوزر روت
+	sbin: Essential system binaries/ فایل‌های باینری ضروری سیستم
+	srv: Data for services provided by this system/ داده‌های مربوط به خدمات ارائه شده توسط این سیستم(سرور ها )
+	tmp: Temporary files, sometimes purged on each boot/ فایل‌های موقت، که گاهی اوقات با هر بار بوت شدن سیستم پاک می‌شوند
+	usr: Secondary hierarchy/ سلسله مراتب ثانویه
+	var: Variable data (logs, ...)/ داده‌های متغیر (لاگ‌ها، ...)
+	**
+
+## Partitions
+Engish: **In Linux, disks are split into partitions (e.g., /dev/sda1, /dev/sdb5), seen as separate drives. Old BIOS used MBR (max 4 primary + logical inside extended), while UEFI uses GPT (up to 128 partitions)**
+**فارسی: **در لینوکس، دیسک‌ها به پارتیشن تقسیم می‌شوند (مثل /dev/sda1, /dev/sdb5) و هرکدام مانند یک دیسک جدا دیده می‌شوند. بایوس از MBR (حداکثر ۴ پارتیشن اصلی + منطقی در Extended) استفاده می‌کرد، اما UEFI از GPT (تا ۱۲۸ پارتیشن) پشتیبانی می‌کند
+

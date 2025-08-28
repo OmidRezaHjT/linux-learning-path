@@ -170,3 +170,36 @@ English: **The “Message of the Day” file, displayed to users after they log 
 ## /etc/issue
 English: **A text file displayed before the login prompt, often used to show system information or legal notices**
 **فارسی: **یک فایل متنی که قبل از نمایش صفحه ورود نشان داده می‌شود و معمولاً برای نمایش اطلاعات سیستم یا هشدارهای قانونی استفاده می‌شود
+
+## parted
+parted [command]
+English: **A command-line tool for managing disk partitions, allowing you to create, delete, resize, move, and check partitions**
+**فارسی: **یک ابزار خط فرمان برای مدیریت پارتیشن‌های دیسک است که امکان ساخت، حذف، تغییر اندازه، جابجایی و بررسی پارتیشن‌ها را فراهم می‌کند
+
+Note: parted does not understands GPT
+
+## fdisk (BIOS)
+fdisk [command]
+English: **A command-line utility to view and manage disk partitions, mainly on MBR (Master Boot Record) partitioned disks. It can create, delete, resize, and list partitions**
+**فارسی: **یک ابزار خط فرمان برای مشاهده و مدیریت پارتیشن‌های دیسک است که بیشتر روی دیسک‌هایی با جدول پارتیشن MBR استفاده می‌شود. امکان ساخت، حذف، تغییر اندازه و لیست کردن پارتیشن‌ها را دارد
+
+## gdisk (UEFI)
+gdisk [command]
+English: **A command-line utility used to view and manage partitions on GPT (GUID Partition Table) disks. It is similar to fdisk but designed for modern GPT-based disks, supporting larger disk sizes and more partitions**
+**فارسی: **یک ابزار خط فرمان برای مشاهده و مدیریت پارتیشن‌ها روی دیسک‌هایی با جدول پارتیشن GPT است. مشابه fdisk عمل می‌کند ولی مخصوص دیسک‌های جدید با GPT است که از حجم‌های بزرگ‌تر و تعداد بیشتری پارتیشن پشتیبانی می‌کنند
+
+## gparted
+English: **GParted (GNOME Partition Editor) is a graphical partition manager for Linux. It lets you create, delete, resize, move, copy, and check partitions and file systems with an easy-to-use GUI, instead of command-line tools like fdisk, parted, or gdisk**
+**فارسی: **جی‌پارتد یک مدیر پارتیشن گرافیکی در لینوکس است. با آن می‌توان به راحتی و با محیط گرافیکی پارتیشن‌ها و فایل‌سیستم‌ها را ساخت، حذف کرد، تغییر اندازه داد، جابه‌جا کرد، کپی گرفت یا بررسی کرد
+
+## LVM
+English: **LVM (Logical Volume Manager) is a system in Linux that allows flexible disk management. Instead of working directly with partitions, you can create logical volumes on top of physical disks. With LVM, you can easily resize partitions, combine multiple disks into one volume, take snapshots, and manage storage more dynamically
+PV (Physical Volume): A whole disk or a partition. It’s better to use partitions rather than raw disks.
+VG (Volume Group): A collection of one or more PVs. The OS sees it as one big disk. PVs can differ in size or be on different physical disks.
+LV (Logical Volume): Appears as a partition to the OS. It can be formatted and used like a regular partition.
+**
+**فارسی: **مدیریت حجم منطقی در لینوکس، سیستمی برای مدیریت انعطاف‌پذیر دیسک‌ها است. به جای کار مستقیم با پارتیشن‌ها، می‌توان روی دیسک‌های فیزیکی حجم‌های منطقی ساخت. با LVM می‌توان راحت‌تر پارتیشن‌ها را تغییر اندازه داد، چند دیسک را یکی کرد، از حجم‌ها snapshot گرفت و مدیریت فضای ذخیره‌سازی را ساده‌تر انجام داد
+
+/etc/fstab : The /etc/fstab file (File System Table) is a configuration file in Linux/Unix that defines how disk partitions, devices, or remote file systems should be automatically mounted at boot. Each line specifies a device, mount point, filesystem type, mount options, dump, and fsck order
+
+##

@@ -52,7 +52,11 @@ English: **/proc is a virtual filesystem in RAM where the kernel stores settings
 English: **The kernel needs drivers to work with hardware, which are stored in initrd or initramfs and used during boot**
 **فارسی: **کرنل برای کار با سخت‌افزار به درایورها نیاز دارد که در initrd یا initramfs ذخیره شده و هنگام بوت استفاده می‌شوند
 
-#Advanced Configuration and Power Interface (ACPI)
+## Advanced Configuration and Power Interface (ACPI)
 English: **ACPI  is a standard that lets the operating system control hardware and power management more efficiently than BIOS.**
 **فارسی: **ACPI  یه استاندارده که به سیستم‌عامل اجازه می‌ده کنترل سخت‌افزار و مدیریت انرژی رو دقیق‌تر از BIOS انجام بده
+
+## zram
+English: **zram is a Linux kernel module that creates a compressed block device in RAM, which can be used as swap space or for temporary storage. It improves performance on systems with limited memory by reducing I/O to slower disks.**
+**فارسی: **یک ماژول کرنل لینوکس است که یک دیسک فشرده در حافظه RAM ایجاد می‌کند و می‌تواند به عنوان فضای swap یا ذخیره‌سازی موقت استفاده شود. این روش عملکرد سیستم‌هایی با حافظه محدود را با کاهش عملیات I/O روی دیسک‌های کندتر بهبود می‌بخشد 
 
