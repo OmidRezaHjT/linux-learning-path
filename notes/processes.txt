@@ -58,10 +58,16 @@ DEBIAN:
 6- Reboot
 
 
+## Grub
+English: **GRUB (GRand Unified Bootloader) is a menu-based bootloader that replaced LILO. Version 1 (Grub Legacy) appeared in 1999, and version 2, a complete rewrite, appeared in 2005. It allows selecting kernels or chainloaders and editing boot options on the fly**
+**فارسی: **GRUB (بوت‌لودر یکپارچه) جایگزین LILO شد. نسخه ۱ (Grub Legacy) در ۱۹۹۹ و نسخه ۲ بازنویسی کامل آن در ۲۰۰۵ منتشر شد. با GRUB می‌توان کرنل‌ها یا chainloaderها را انتخاب کرد و گزینه‌های بوت را به‌صورت لحظه‌ای ویرایش نمود
 
-## 
-English: ** **
-**فارسی: ** س
-## 
-English: ** **
-**فارسی: ** س
+## Grub Legacy
+English: **GRUB v1 (0.9) is usually installed in /boot/grub. Its main configuration is in /boot/grub/menu.lst, though some modern distros (like RedHat-based) link it to /boot/grub/grub.conf. A GRUB legacy config file has two sections: global settings first, then kernel/initramfs or chainloader entries**
+**فارسی: **نسخه ۱ GRUB (۰.۹) معمولاً در /boot/grub نصب می‌شود. فایل پیکربندی اصلی آن در /boot/grub/menu.lst قرار دارد، اگرچه در برخی توزیع‌های جدید (مثل RedHat) به /boot/grub/grub.conf لینک شده است. فایل پیکربندی GRUB Legacy دو بخش دارد: ابتدا تنظیمات کلی و سپس گزینه‌های کرنل/initramfs یا chainloader
+
+## GRUB2 
+English: **GRUB2 is the most common bootloader today. On BIOS systems, it’s installed in /boot/grub/ or /boot/grub2/, and on UEFI systems, in /boot/efi/EFI/distro-name/ (e.g., /boot/efi/EFI/fedora/). Its configuration file is grub.cfg. GRUB2 uses Linux-style partition numbering: the first partition on the first disk is (hd0,1) (or (hd0,msdos1) for DOS partitions, (hd0,gpt1) for GPT)**
+فارسی:
+
+##

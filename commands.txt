@@ -202,4 +202,15 @@ LV (Logical Volume): Appears as a partition to the OS. It can be formatted and u
 
 /etc/fstab : The /etc/fstab file (File System Table) is a configuration file in Linux/Unix that defines how disk partitions, devices, or remote file systems should be automatically mounted at boot. Each line specifies a device, mount point, filesystem type, mount options, dump, and fsck order
 
-##
+## GRUB (legacy) commands
+ grub-install /dev/fd0
+  grub-install '(fd0)'
+
+## GRUB2 commands
+  grub-install /dev/nvme0n1
+  grub-mkconfig > /boot/grub/grub.cfg
+  grub-mkconfig -o /boot/grub/grub.cfg
+ on some modern distros, you have both grub and grub2 commands available for compatibility reasons, and one links to the other
+##Interacting with GRUB2
+ If you press c on the grub menu, you will go into the GRUB Command Line or GRUB shell. There you can type commands like root and kernel and initrd and boot the system with boot or press the Esc key to return back to the menu.
+	
