@@ -221,3 +221,30 @@ Finglish: **Dastoor ldconfig cache-e linker-e dynamic ra be-roz resani mikonad b
 English: **Used to manually run a program with its dynamic linker, loading all required shared libraries before execution. Normally, you don’t need to call it because ELF executables already specify it**
 Finglish: **Baraye ejra-ye dastkari-ye barname ba dynamic linker an, va load kardan tamame ketabkhane-ha-ye eshteraki ghabl az ejra. Mamulan niyaz nist farakhani shavad chon ELF executables khodeshun ro moshakhas mikonand**
 
+## apt
+"apt [options] [command]"
+English: **Used to manage packages in Debian-based systems (like Ubuntu). It can install, update, upgrade, search, and remove software (update: refreshes package lists, upgrade: installs newer versions of installed packages)(Important switches/commands: install = install package, remove = remove package, update = update package lists, upgrade = upgrade all packages, search = search for package, show = show package info)**
+Finglish: Baraye modiriyat package-ha dar system-haye mabna bar Debian (mesl Ubuntu) estefade mishe. Mitune software nasb, update, upgrade, search ya hazf kone (update: list package-ha ro tazeh mikone, upgrade: version jadid package-haye nasb shode ro nasb mikone)(Important switches/commands: install = install package, remove = remove package, update = update package lists, upgrade = upgrade all packages, search = search for package, show = show package info)**
+
+## apt-get
+"apt-get [options] [command]"
+English: **Used for package management in Debian-based systems (older tool than apt). It can install, update, upgrade, and remove packages (update: refreshes package lists, upgrade: installs newer versions of installed packages)(Important switches/commands: install = install package, remove = remove package, update = update package lists, upgrade = upgrade packages, dist-upgrade = smart upgrade handling dependencies, autoremove = remove unused packages)**
+Finglish: **Baraye modiriyat package dar system-haye Debian estefade mishe (ghabl az apt bood). Mitune package-ha ro nasb, update, upgrade ya hazf kone (update: list package-ha ro tazeh mikone, upgrade: version jadid package-haye nasb shode ro nasb mikone)(Important switches/commands: install = install package, remove = remove package, update = update package lists, upgrade = upgrade packages, dist-upgrade = smart upgrade handling dependencies, autoremove = remove unused packages)**
+
+## apt-cache
+"apt-cache [options] [command]"
+English: Command-line tool to query and search the APT package cache. It helps find packages, dependencies, and package details but does not install or remove packages (Important switches: search = search package, show = show details, depends = list dependencies, rdepends = list reverse dependencies, policy = show install candidate)
+Finglish: Yek tool command-line baraye search va query dar cache APT-e. Komak mikone package-ha, dependency-ha va joz’iyat-e package ro peyda koni vali nasb ya hazf nemikone (Important switches: search = search package, show = show details, depends = list dependencies, rdepends = list reverse dependencies, policy = show install candidate)
+
+## snap
+"snap [options] [command]"
+English: *Used for managing snap packages (self-contained apps that include dependencies). It can install, update, remove, and manage software across different Linux distributions**
+Finglish: **Baraye modiriyat snap package-ha estefade mishe (app-ha ke hameye dependency-hashoon ro ba khodeshun daran). Mitune nasb, update, hazf va modiriyat barname ro dar distro-haye mokhtalef anjam bede**
+
+## dpkg
+"dpkg [options] [command]"
+English: **Low-level package manager for Debian-based systems. It installs, removes, and provides information about .deb packages but does not handle dependencies automatically (Important switches: -i = install, -r = remove, -l = list, -s = status, -L = show files in package)**
+Finglish: **Package manager dar sath-e payin baraye Debian-base shode. Baraye nasb, hazf va daryaft etela'at dar mored .deb package-ha estefade mishe, vali dependency-ha ro khodesh automatic handle nemikone(Important switches: -i = install, -r = remove, -l = list, -s = status, -L = show files in package)** 
+  In some cases a package is installed but without proper dependencies (say using dpkg) or an installation is interrupted for any reason. In these cases a apt-get install -f might help, -f is for fix broken :)
+
+
