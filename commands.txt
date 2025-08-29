@@ -1,216 +1,223 @@
 # Commands
 
-## man 
+## man
 "man [command]"
-English: **displays the manual page for a command, showing usage, options, and descriptio**
-**فارسی: **این دستور صفحه راهنمای یک دستور را نمایش می‌دهد و شامل نحوه استفاده، گزینه‌ها و توضیحات آن است
+English: **Displays the manual page for a command, showing usage, options, and description**
+Finglish: **In dastoor safhe-ye rahnamaye yek dastoor ra namayesh mide va shamel nahve estefade, gozine-ha va tozihat an ast**
 
 ## ls
 "ls [options]"
-**English:** List files and directories in the current folder.  
-**فارسی:** لیست گرفتن از فایل‌ها و دایرکتوری‌های موجود در پوشه فعلی.
+English: **List files and directories in the current folder**
+Finglish: **List gereftan az file-ha va directory-ha-ye mojood dar poshe-ye feli**
 
 ## lsusb
 "lsusb [options]"
 English: **List all USB devices connected to the system**
-**فارسی: **لیست تمام دستگاه‌های USB متصل به سیستم
+Finglish: **List tamame dastgah-ha-ye USB motasel be system**
 
 ## lspci
 "lspci [options]"
 English: **List all PCI devices (like graphics cards, network cards)**
-**فارسی: **لیست تمام دستگاه‌های PCI (مثل کارت گرافیک، کارت شبکه)
+Finglish: **List tamame dastgah-ha-ye PCI (mesl-e card-e grafik, card-e shabake)**
 
 ## lsblk
 "lsblk [options]"
 English: **List information about all block devices (disks, partitions)**
-**فارسی: **نمایش اطلاعات همه دستگاه‌های بلاک (هارد، پارتیشن‌ها)
+Finglish: **Namayesh etela’at hame-ye dastgah-ha-ye block (hard, partition-ha)**
 
 ## lshw
 "lshw [options]"
 English: **Display detailed hardware information of the system**
-**فارسی: **نمایش اطلاعات سخت‌افزاری دقیق سیستم
+Finglish: **Namayesh etela’at sakht-afzari daghigh-e system**
 
 ## lsmod
 "lsmod"
 English: **Shows kernel modules. They are located at /lib/modules**
-**فارسی: **نشان دادن ماژول های کرنل
+Finglish: **Neshan dadan module-ha-ye kernel**
 
 ## cat
 "cat [file]"
 English: **Display the content of a file**
-**فارسی: **نمایش محتوای یک فایل
+Finglish: **Namayesh mohtavaye yek file**
 
 ## mkdir
 "mkdir [directory]"
 English: **Create a new directory**
-**فارسی: **ایجاد یک پوشه جدید
+Finglish: **Ejad-e yek poshe-ye jadid**
 
 ## rmdir
 "rmdir [directory]"
 English: **Remove an empty directory**
-**فارسی: **حذف یک پوشه خالی
+Finglish: **Hazf-e yek poshe-ye khali**
 
 ## rm
 "rm [file/directory]"
 English: **Remove a file or directory**
-**فارسی: **حذف یک فایل یا پوشه
+Finglish: **Hazf-e yek file ya poshe**
 
 ## touch
 "touch [file]"
 English: **Create a new empty file or update its timestamp**
-**فارسی: **ایجاد یک فایل خالی یا به‌روزرسانی زمان آخرین تغییر آن
+Finglish: **Ejad yek file khali ya be-roz resani zaman-e akharin taghir**
 
 ## cp
 "cp [source] [destination]"
 English: **Copy a file or directory**
-**فارسی: **کپی کردن یک فایل یا پوش
+Finglish: **Copy kardan yek file ya poshe**
 
 ## mv
 "mv [source] [destination]"
 English: **Move or rename a file or directory**
-**فارسی: **جابجا کردن یا تغییر نام یک فایل یا پوشه
+Finglish: **Jabja kardan ya taghir nam-e yek file ya poshe**
 
 ## pwd
 "pwd"
 English: **Show the current working directory**
-**فارسی: **نمایش مسیر پوشه فعلی
+Finglish: **Namayesh masir-e poshe-ye feli**
 
 ## echo
 "echo [text]"
 English: **Print text to the terminal or write to a file**
-**فارسی: **چاپ متن در ترمینال یا نوشتن در فایل
+Finglish: **Chap matn dar terminal ya neveshtan dar file**
 
 ## insmod
 "insmod [module]"
 English: **Insert a kernel module into the system**
-**فارسی: **اضافه کردن یک ماژول کرنل به سیستم
+Finglish: **Ezafe kardan yek module kernel be system**
 
 ## modprobe
 "modprobe [module]"
-(Better option)
 English: **Insert or remove a kernel module, handling dependencies automatically**
-**فارسی: **اضافه یا حذف یک ماژول کرنل با مدیریت خودکار وابستگی‌ها
+Finglish: **Ezafe ya hazf kardan module kernel ba modiriat-e khodkar-e vavastgi-ha**
 
 ## rmmod
 "rmmod [module]"
 English: **Remove a kernel module from the system**
-**فارسی: **حذف یک ماژول کرنل از سیستم
+Finglish: **Hazf-e yek module kernel az system**
 
 ## modinfo
 "modinfo [module]"
 English: **Show information about a kernel module (version, dependencies, author, etc.)**
-**فارسی: **نمایش اطلاعات درباره یک ماژول کرنل (نسخه، وابستگی‌ها، نویسنده و …)
+Finglish: **Namayesh etela’at darbare-ye yek module kernel (version, dependencies, author, ...)**
 
 ## dmesg
 "dmesg [options]"
-English: **dmesg shows kernel messages but does not keep the boot process log permanently; you can use journalctl -b to view boot logs.**
-**فارسی: **دستور dmesg پیام‌های کرنل را نشان می‌دهد اما لاگ پروسس بوت را نگه نمی‌دارد؛ برای دیدن لاگ بوت می‌توان از journalctl -b استفاده کرد
+English: **dmesg shows kernel messages but does not keep the boot process log permanently; you can use journalctl -b to view boot logs**
+Finglish: **Dastoor dmesg payam-ha-ye kernel ra neshan mide vali log-e boot ra hefz nemikonad; baraye didan log-e boot mitavan az journalctl -b estefade kard**
 
 ## pstree
 "pstree [options]"
 English: **pstree shows running processes in a tree-like structure, displaying parent-child relationships**
-**فارسی: **این دستور فرآیندهای در حال اجرا را به صورت درختی نشان می‌دهد و رابطه والد و فرزند بین آن‌ها را نمایش می‌دهد
+Finglish: **In dastoor farayand-ha-ye dar hal ejra ra be soorat-e derakhti neshan mide va rabete-ye valed-va-farzand ra namayesh mide**
 
 ## systemctl
 "systemctl [command]"
 English: **systemctl is the main command to manage services in systemd (start, stop, enable, disable, check status)**
-**فارسی: **دستور systemctl فرمان اصلی برای مدیریت سرویس‌ها در systemd است (اجرا، توقف، فعال‌سازی، غیرفعال‌سازی، بررسی وضعیت)
+Finglish: **Dastoor systemctl farman asli baraye modiriat-e service-ha dar systemd ast (ejra, stop, enable, disable, check status)**
 
-## systemctl list-units 
+## systemctl list-units
 "systemctl list-units [options]"
 English: **Lists all active units (services, sockets, targets, etc.) managed by systemd**
-**فارسی: **لیست تمام یونیت‌های فعال (سرویس‌ها، سوکت‌ها، تارگت‌ها و …) که توسط systemd مدیریت می‌شوند
+Finglish: **List tamame unit-ha-ye faal (service-ha, socket-ha, target-ha, ...) ke tavasot-e systemd modiriat mishavand**
 
 ## systemctl get-default
 "systemctl get-default"
 English: **Shows the default target, i.e., which group of services the system starts by default (like multi-user or graphical)**
-**فارسی: **تارگت پیش‌فرض سیستم را نشان می‌دهد؛ یعنی گروهی از سرویس‌ها که سیستم به طور پیش‌فرض اجرا می‌کند (مثلاً multi-user یا graphical)
+Finglish: **Target pishfarz system ra neshan mide; yani gorohi az service-ha ke system be tore pishfarz ejra mikonad (mesl-e multi-user ya graphical)**
 
 ## systemctl is-system-[state]
 "systemctl is-system-[state]"
-English: **checks the overall state of the system. You replace [state] with one option at a time (running, degraded, maintenance, initializing, starting, stopping) to see if the system is in that specific state**
-**فارسی: **این دستور وضعیت کلی سیستم را بررسی می‌کند. [state] را هر بار با یکی از گزینه‌ها (running، degraded، maintenance، initializing، starting، stopping) جایگزین می‌کنید تا مشخص شود سیستم در آن وضعیت خاص است یا خیر
+English: **Checks the overall state of the system. Replace [state] with one option at a time (running, degraded, maintenance, initializing, starting, stopping)**
+Finglish: **In dastoor vaziyat-e kolli system ra barrasi mikonad. [state] ra har bar ba yek gozine jaygozin konid (running, degraded, maintenance, initializing, starting, stopping)**
 
 ## journalctl
 "journalctl [options]"
-English: **journalctl shows logs collected by systemd’s journal, including system, kernel, service, and boot logs (e.g., journalctl -k for kernel, journalctl -b for boot)**
-**فارسی: **دستور journalctl لاگ‌های جمع‌آوری‌شده توسط journal در systemd را نمایش می‌دهد، از جمله لاگ‌های سیستم، کرنل، سرویس‌ها و بوت (مثلاً journalctl -k برای کرنل و journalctl -b برای بوت)
+English: **Shows logs collected by systemd’s journal, including system, kernel, service, and boot logs (journalctl -k for kernel, journalctl -b for boot)**
+Finglish: **Dastoor journalctl log-ha-ye jamavari shode tavasot-e journal dar systemd ra neshan mide, az jomle log-ha-ye system, kernel, service va boot**
 
 ## runlevel
 "runlevel"
-English: **you can check your current runlevel with this command/ The default was in /etc/inittab **
-**فارسی: ** می‌تونی وضعیت ران لول فعلی خودت را با این دستور بررسی کنی
+English: **You can check your current runlevel with this command. The default was in /etc/inittab**
+Finglish: **Mitavanid vaziyat-e runlevel-e feli khod ra ba in dastoor barrasi konid**
 
 ## telinit
 "telinit [runlevel]"
-English: **you can changes the current runlevel of a SysVinit system, effectively switching the system to a different stage of operation.**
-**فارسی: **دستور telinit runlevel فعلی سیستم SysVinit را تغییر می‌دهد و سیستم را به مرحله‌ای دیگر از عملکرد منتقل می‌کند.
-Note: /etc/inittab is used by SysVinit. systemd does not use this file ; it uses targets instead (e.g., default.target) 
+English: **Change the current runlevel of a SysVinit system**
+Finglish: **Dastoor telinit runlevel feli system-e SysVinit ra taghir midahad va system ra be marhale-ye digar az amalkard montaghel mikonad**
 
 ## shutdown
 "shutdown [-r | -h | -P] [time] [message]"
-English: **shutdown safely powers off or reboots a Linux system, optionally notifying users; it can also perform a halt (stop all processes and CPU) if specified(e.g., shutdown -r 60 Reloading updated kernel)
-**
-**فارسی: **دستور shutdown برای خاموش یا ریبوت امن یک سیستم لینوکس استفاده می‌شود و می‌توان کاربران را مطلع کرد؛ همچنین می‌تواند halt (توقف تمام پردازش‌ها و CPU) را نیز انجام دهد
+English: **Shutdown safely powers off or reboots a Linux system, optionally notifying users; can also halt (stop all processes and CPU)**
+Finglish: **Dastoor shutdown baraye khamosh ya reboot-e safe system-e Linux estefade mishavad va mitavan karbaran ra motaleh kard; hamchenin mitavan halt (stop tamame process-ha va CPU) ra anjam dad**
 
 ## wall
 "wall [message]"
 English: **Sends a message to all logged-in users on the system**
-**فارسی: **این دستور پیامی را به تمام کاربران وارد شده در سیستم ارسال می‌کند
+Finglish: **In dastoor payami ra be tamame karbaran-e voroodi dar system ersal mikonad**
 
 ## mesg
 "mesg [y|n]"
 English: **Controls whether other users can write to your terminal (allow y or deny n)**
-**فارسی: **این دستور مشخص می‌کند که آیا کاربران دیگر می‌توانند به ترمینال شما پیام بفرستند
+Finglish: **In dastoor moshakhas mikonad aya karbaran-e digar mitavanand be terminal-e shoma payam befrestand**
 
 ## /etc/motd
-English: **The “Message of the Day” file, displayed to users after they log in to the system**
-**فارسی: **فایل “پیام روز” که پس از ورود کاربران به سیستم نمایش داده می‌شود
+"/etc/motd"
+English: **The “Message of the Day” file, displayed to users after login**
+Finglish: **File “Payam-e Rooz” ke pas az vorood-e karbaran namayesh dade mishavad**
 
 ## /etc/issue
-English: **A text file displayed before the login prompt, often used to show system information or legal notices**
-**فارسی: **یک فایل متنی که قبل از نمایش صفحه ورود نشان داده می‌شود و معمولاً برای نمایش اطلاعات سیستم یا هشدارهای قانونی استفاده می‌شود
+"/etc/issue"
+English: **A text file displayed before the login prompt, often showing system info or legal notices**
+Finglish: **File matni ke ghabl az login namayesh dade mishavad va aksaran baraye namayesh etela’at system ya hoshoar-ha-ye ghanooni estefade mishavad**
 
 ## parted
-parted [command]
-English: **A command-line tool for managing disk partitions, allowing you to create, delete, resize, move, and check partitions**
-**فارسی: **یک ابزار خط فرمان برای مدیریت پارتیشن‌های دیسک است که امکان ساخت، حذف، تغییر اندازه، جابجایی و بررسی پارتیشن‌ها را فراهم می‌کند
+"parted [command]"
+English: **Command-line tool for managing disk partitions, allowing create, delete, resize, move, and check partitions**
+Finglish: **Abzar khat-e farman baraye modiriat-e partition-ha-ye disk, ejad, hazf, taghir andazeh, jabja kardan va barrasi anha ra emkan pazir mikonad**
 
-Note: parted does not understands GPT
+## fdisk
+"fdisk [command]"
+English: **Command-line utility to view/manage disk partitions on MBR disks**
+Finglish: **Abzar khat-e farman baraye didan va modiriat-e partition-ha bar ruye disk-ha-ye MBR**
 
-## fdisk (BIOS)
-fdisk [command]
-English: **A command-line utility to view and manage disk partitions, mainly on MBR (Master Boot Record) partitioned disks. It can create, delete, resize, and list partitions**
-**فارسی: **یک ابزار خط فرمان برای مشاهده و مدیریت پارتیشن‌های دیسک است که بیشتر روی دیسک‌هایی با جدول پارتیشن MBR استفاده می‌شود. امکان ساخت، حذف، تغییر اندازه و لیست کردن پارتیشن‌ها را دارد
-
-## gdisk (UEFI)
-gdisk [command]
-English: **A command-line utility used to view and manage partitions on GPT (GUID Partition Table) disks. It is similar to fdisk but designed for modern GPT-based disks, supporting larger disk sizes and more partitions**
-**فارسی: **یک ابزار خط فرمان برای مشاهده و مدیریت پارتیشن‌ها روی دیسک‌هایی با جدول پارتیشن GPT است. مشابه fdisk عمل می‌کند ولی مخصوص دیسک‌های جدید با GPT است که از حجم‌های بزرگ‌تر و تعداد بیشتری پارتیشن پشتیبانی می‌کنند
+## gdisk
+"gdisk [command]"
+English: **Command-line utility to view/manage partitions on GPT disks**
+Finglish: **Abzar khat-e farman baraye didan va modiriat-e partition-ha bar ruye disk-ha-ye GPT**
 
 ## gparted
-English: **GParted (GNOME Partition Editor) is a graphical partition manager for Linux. It lets you create, delete, resize, move, copy, and check partitions and file systems with an easy-to-use GUI, instead of command-line tools like fdisk, parted, or gdisk**
-**فارسی: **جی‌پارتد یک مدیر پارتیشن گرافیکی در لینوکس است. با آن می‌توان به راحتی و با محیط گرافیکی پارتیشن‌ها و فایل‌سیستم‌ها را ساخت، حذف کرد، تغییر اندازه داد، جابه‌جا کرد، کپی گرفت یا بررسی کرد
+"gparted"
+English: **Graphical partition manager for Linux, allowing create, delete, resize, move, copy, and check partitions with GUI**
+Finglish: **Modir-e partition grafiki dar Linux ke ejad, hazf, taghir andazeh, jabja, copy va barrasi partition-ha va file system ra ba GUI anjam midahad**
 
 ## LVM
-English: **LVM (Logical Volume Manager) is a system in Linux that allows flexible disk management. Instead of working directly with partitions, you can create logical volumes on top of physical disks. With LVM, you can easily resize partitions, combine multiple disks into one volume, take snapshots, and manage storage more dynamically
+"lvm [command]"
+English: **Logical Volume Manager: flexible disk management using PV, VG, LV
+
 PV (Physical Volume): A whole disk or a partition. It’s better to use partitions rather than raw disks.
 VG (Volume Group): A collection of one or more PVs. The OS sees it as one big disk. PVs can differ in size or be on different physical disks.
 LV (Logical Volume): Appears as a partition to the OS. It can be formatted and used like a regular partition.
 **
-**فارسی: **مدیریت حجم منطقی در لینوکس، سیستمی برای مدیریت انعطاف‌پذیر دیسک‌ها است. به جای کار مستقیم با پارتیشن‌ها، می‌توان روی دیسک‌های فیزیکی حجم‌های منطقی ساخت. با LVM می‌توان راحت‌تر پارتیشن‌ها را تغییر اندازه داد، چند دیسک را یکی کرد، از حجم‌ها snapshot گرفت و مدیریت فضای ذخیره‌سازی را ساده‌تر انجام داد
 
-/etc/fstab : The /etc/fstab file (File System Table) is a configuration file in Linux/Unix that defines how disk partitions, devices, or remote file systems should be automatically mounted at boot. Each line specifies a device, mount point, filesystem type, mount options, dump, and fsck order
+Finglish: **Modiriat-e mojaz-e volume dar Linux, estefade az PV, VG, LV baraye modiriat-e fleksibel-e disk**
 
-## GRUB (legacy) commands
- grub-install /dev/fd0
-  grub-install '(fd0)'
+## /etc/fstab
+"/etc/fstab"
+English: **Configuration file defining how disk partitions, devices, or remote file systems are mounted at boot**
+Finglish: **File-e config ke moshakhas mikonad partition-ha, device-ha ya file system-ha dar boot chegoone mount mishavand**
 
-## GRUB2 commands
-  grub-install /dev/nvme0n1
-  grub-mkconfig > /boot/grub/grub.cfg
-  grub-mkconfig -o /boot/grub/grub.cfg
- on some modern distros, you have both grub and grub2 commands available for compatibility reasons, and one links to the other
-##Interacting with GRUB2
- If you press c on the grub menu, you will go into the GRUB Command Line or GRUB shell. There you can type commands like root and kernel and initrd and boot the system with boot or press the Esc key to return back to the menu.
-	
+## ldd
+"ldd [executable]"
+English: **Shows the shared libraries required by a program or executable**
+Finglish: **Namayesh ketabkhane-ha-ye eshteraki ke barname ya executable be anha niaz darad**
+
+## ldconfig
+"ldconfig [command]"
+English: **Updates dynamic linker cache based on library directories listed in /etc/ld.so.conf**
+Finglish: **Dastoor ldconfig cache-e linker-e dynamic ra be-roz resani mikonad bar asas masirhaye ketabkhane mojud dar
+
+## ld or ld-linux
+"ld|ld-linux [options] [executable]"
+English: **Used to manually run a program with its dynamic linker, loading all required shared libraries before execution. Normally, you don’t need to call it because ELF executables already specify it**
+Finglish: **Baraye ejra-ye dastkari-ye barname ba dynamic linker an, va load kardan tamame ketabkhane-ha-ye eshteraki ghabl az ejra. Mamulan niyaz nist farakhani shavad chon ELF executables khodeshun ro moshakhas mikonand**
+

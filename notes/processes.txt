@@ -2,47 +2,39 @@
 
 ## Boot Process
 English: **1)Motherboard runs POST (Power-On Self-Test)/2)Motherboard loads the bootloader/3)Bootloader loads the Linux kernel./4)Kernel initializes the system and root filesystem./5)Init program starts services (web, GUI, networking, etc.)**
-**فارسی: **۱) مادربورد تست اولیه (POST) را اجرا می‌کند./۲)مادربورد بوت‌لودر را بارگذاری می‌کند./۳) بوت‌لودر کرنل لینوکس را بارگذاری می‌کند./۴) کرنل سیستم و فایل‌سیستم ریشه را مقداردهی می‌کند./۵) برنامه init سرویس‌ها را اجرا می‌کند (وب، رابط گرافیکی، شبکه و …).
+Finglish: **1)Motherboard test-e avvalieh (POST) ra ejra mikonad / 2)Motherboard bootloader ra bar gozari mikonad / 3)Bootloader kernel-e Linux ra bar gozari mikonad / 4)Kernel system va filesystem-e root ra meghdardahi mikonad / 5)Barname init service-ha ra ejra mikonad (web, GUI, networking, etc.)**
 
 ## Bootloader
 English: **Bootloader sets up minimal hardware and runs the OS; on GNU/Linux, GRUB is used, which can run any program but usually starts the OS**
-**فارسی: **فارسی: بوت‌لودر حداقل سخت‌افزار لازم را آماده کرده و سیستم‌عامل را اجرا می‌کند؛ در GNU/Linux معمولاً از GRUB استفاده می‌شود که می‌تواند هر برنامه‌ای را اجرا کند اما معمولاً سیستم‌عامل را راه‌اندازی می‌کند.
+Finglish: **Bootloader hadd-e aqal hardware lazem ra amade karde va system-operating ra ejra mikonad; dar GNU/Linux aksaran az GRUB estefade mishavad ke mitavanad har barname-i ra ejra konad ama aksaran system-operating ra start mikonad**
 
 ## Kernel
 English: **The kernel, the core of the OS, is loaded by the bootloader into memory and can receive parameters from GRUB for modes or settings**
-**فارسی: **کرنل، هسته سیستم‌عامل، توسط بوت‌لودر در حافظه بارگذاری می‌شود و می‌تواند پارامترهایی از GRUB برای حالت‌ها یا تنظیمات دریافت کند
+Finglish: **Kernel, hale system-operating, tavasot bootloader dar hafeze bar gozari mishavad va mitavanad parameter-ha ra az GRUB baraye mode-ha ya settings daryaft konad**
 
 ## init
 English: **After kernel initialization, the init system starts all necessary services, daemons, and programs in order, managing dependencies. Admins can control services later. Common init systems are SysVinit (older Unix style), Upstart (event-based, mostly replaced), and Systemd (modern, parallel service startup). Init always has PID 1**
-**فارسی: **بعد از مقداردهی کرنل، سیستم init سرویس‌ها، دیمون‌ها و برنامه‌های لازم را به ترتیب و با مدیریت وابستگی اجرا می‌کند. مدیر سیستم می‌تواند سرویس‌ها را بعداً کنترل کند. انواع رایج init شامل SysVinit (قدیمی)، Upstart (مبتنی بر رویداد، بیشتر جایگزین شده) و Systemd (مدرن، اجرای موازی سرویس‌ها) هستند. فرآیند init همیشه PID ۱ دارد
+Finglish: **Bad az meghdardahi kernel, system init service-ha, daemon-ha va barname-ha-ye lazem ra be tartib va ba modiriat-e vaseteh ejra mikonad. Admin-ha mitavanand service-ha ra ba'ad kontrol konand. Anvae maroof-e init shamel SysVinit (ghadimi), Upstart (based bar event, aksaran jaygozin shode) va Systemd (modern, ejra-ye parallel service-ha) hastand. Process-e init hamishe PID 1 darad**
 
 ## systemd
 English: **systemd is the modern init system used in most Linux distros; it manages services, dependencies, and can start processes in parallel**
-**فارسی: **systemd سیستم init مدرن است که در بیشتر توزیع‌های لینوکس استفاده می‌شود؛ سرویس‌ها و وابستگی‌ها را مدیریت کرده و می‌تواند پردازش‌ها را به صورت موازی اجرا کند
+Finglish: **systemd system init modern ast ke dar bishtar distro-ha-ye Linux estefade mishavad; service-ha va vasete-ha ra modiriat mikonad va mitavanad process-ha ra be soorat-e parallel ejra konad**
 
 ## systemctl
 English: **systemctl is the main command to manage services in systemd (start, stop, enable, disable, check status)**
-**فارسی: **دستور systemctl فرمان اصلی برای مدیریت سرویس‌ها در systemd است (اجرا، توقف، فعال‌سازی، غیرفعال‌سازی، بررسی وضعیت)
+Finglish: **Dastoor systemctl farman-e asli baraye modiriat-e service-ha dar systemd ast (ejra, stop, enable, disable, check status)**
 
 ## SysV
 English: **SysVinit is the older init system. Its control scripts are located in /etc/init.d/ and are similar to general bash scripts**
-**فارسی: **SysVinit سیستم init قدیمی‌تر است. فایل‌های کنترلی آن در /etc/init.d/ قرار دارند و شبیه اسکریپت‌های عادی bash هستند
+Finglish: **SysVinit system init ghadimtar ast. File-ha-ye control an dar /etc/init.d/ gharar darand va shabihe script-ha-ye normal-e bash hastand**
 
 ## runlevels
 English: **Runlevels define which tasks or services are active in a Linux system at a given state, like different stages of system operation**
-**فارسی: **Runlevelها مشخص می‌کنند در هر وضعیت یک سیستم لینوکس چه کارها یا سرویس‌هایی فعال هستند، مثل مراحل مختلف عملکرد سیستم
-
-You can switch to special targets in systemd:
-rescue: mounts local filesystems, no networking, root only (maintenance).
-emergency: only root filesystem in read-only, no networking, root only.
-reboot: restarts the system.
-halt: stops all processes and CPU.
-poweroff: like halt but also sends ACPI shutdown signal.
-
+Finglish: **Runlevel-ha moshakhas mikonand dar har vaziyat-e system-e Linux che kar-ha ya service-ha faal hastand, mesl-e marhaleh-ha-ye mokhtalef-e performance system**
 
 ## SysV runlevels
 English: **On SysVinit, different stages of system operation could be defined using runlevels**
-**فارسی: **در SysVinit می‌شد مراحل مختلف عملکرد سیستم را با استفاده از runlevelها تعریف کرد.
+Finglish: **Dar SysVinit mitavan marhaleh-ha-ye mokhtalef-e performance system ra ba estefade az runlevel-ha tarif kard**
 REDHAT:
 0- Shutdown
 1- Single-user mode (recovery); Also called S or s
@@ -57,17 +49,15 @@ DEBIAN:
 2- Multi-user mode with graphics
 6- Reboot
 
-
 ## Grub
 English: **GRUB (GRand Unified Bootloader) is a menu-based bootloader that replaced LILO. Version 1 (Grub Legacy) appeared in 1999, and version 2, a complete rewrite, appeared in 2005. It allows selecting kernels or chainloaders and editing boot options on the fly**
-**فارسی: **GRUB (بوت‌لودر یکپارچه) جایگزین LILO شد. نسخه ۱ (Grub Legacy) در ۱۹۹۹ و نسخه ۲ بازنویسی کامل آن در ۲۰۰۵ منتشر شد. با GRUB می‌توان کرنل‌ها یا chainloaderها را انتخاب کرد و گزینه‌های بوت را به‌صورت لحظه‌ای ویرایش نمود
+Finglish: **GRUB (bootloader yekparche) jaygozin LILO shod. Version 1 (Grub Legacy) dar 1999 va version 2, rewrite kamel dar 2005 pakhsh shod. Ba GRUB mitavan kernel-ha ya chainloader-ha ra entekhab kard va boot option-ha ra be soorat-e lahze-i edit kard**
 
 ## Grub Legacy
 English: **GRUB v1 (0.9) is usually installed in /boot/grub. Its main configuration is in /boot/grub/menu.lst, though some modern distros (like RedHat-based) link it to /boot/grub/grub.conf. A GRUB legacy config file has two sections: global settings first, then kernel/initramfs or chainloader entries**
-**فارسی: **نسخه ۱ GRUB (۰.۹) معمولاً در /boot/grub نصب می‌شود. فایل پیکربندی اصلی آن در /boot/grub/menu.lst قرار دارد، اگرچه در برخی توزیع‌های جدید (مثل RedHat) به /boot/grub/grub.conf لینک شده است. فایل پیکربندی GRUB Legacy دو بخش دارد: ابتدا تنظیمات کلی و سپس گزینه‌های کرنل/initramfs یا chainloader
+Finglish: **Version 1 GRUB (0.9) aksaran dar /boot/grub nasb mishavad. File-e config asli an dar /boot/grub/menu.lst gharar darad, harche modern distro-ha (mesl-e RedHat) an ra be /boot/grub/grub.conf link karde and. File-e config GRUB Legacy do bakhsh darad: aval setting-ha-ye global, sepas kernel/initramfs ya chainloader entries**
 
 ## GRUB2 
 English: **GRUB2 is the most common bootloader today. On BIOS systems, it’s installed in /boot/grub/ or /boot/grub2/, and on UEFI systems, in /boot/efi/EFI/distro-name/ (e.g., /boot/efi/EFI/fedora/). Its configuration file is grub.cfg. GRUB2 uses Linux-style partition numbering: the first partition on the first disk is (hd0,1) (or (hd0,msdos1) for DOS partitions, (hd0,gpt1) for GPT)**
-فارسی:
+Finglish: **GRUB2 akseran bootloader-e mojood dar BIOS system-ha dar /boot/grub/ ya /boot/grub2/ nasb mishavad, va dar UEFI system-ha dar /boot/efi/EFI/distro-name/ (mesl-e /boot/efi/EFI/fedora/) gharar darad. File-e config an grub.cfg ast. GRUB2 az Linux-style partition numbering estefade mikonad: avalin partition dar avalin disk (hd0,1) ast (ya (hd0,msdos1) baraye DOS partition-ha, (hd0,gpt1) baraye GPT)**
 
-##

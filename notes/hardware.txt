@@ -1,62 +1,61 @@
 # Hardware Basics
 
 ## OS
-English: ** An operating system (OS) manages hardware and software resources and provides services for programs.**
-**فارسی: **سیستم‌عامل منابع سخت‌افزاری و نرم‌افزاری را مدیریت کرده و خدماتی برای برنامه‌ها فراهم می‌کند 
+English: **An operating system (OS) manages hardware and software resources and provides services for programs.**
+Finglish: **System-operating (OS) manabe hardware va software ra modiriat mikonad va service baraye barname-ha faraham mikonad**
 
 ## Firmware
-**English:** Firmware is the software embedded in hardware that controls its operation. Motherboards require firmware to function properly.**
-**فارسی: ** فرمور(میان افزار) نرم‌افزاری است که در سخت‌افزار قرار دارد و عملکرد آن را کنترل می‌کند. مادربوردها برای کارکرد صحیح به فرمور نیاز دارند
+English: **Firmware is the software embedded in hardware that controls its operation. Motherboards require firmware to function properly.**
+Finglish: **Firmware (mian-afzar) software-i ast ke dar hardware gharar darad va amal kard-e an ra control mikonad. Motherboard-ha baraye kar kardan-e sahih be firmware niyaz darand**
 
 ## BIOS
 English: **The old boot method uses MBR and a text menu, but it's not enough for modern systems, which use a two-step boot process.**
-**فارسی: ** روش قدیمی بوت با ام بی آر و منوی متنی کار می‌کند، اما برای سیستم‌های مدرن کافی نیست و اغلب از فرآیند بوت دو مرحله‌ای استفاده می‌شود
+Finglish: **Ravesh-e ghadimi-e boot ba MBR va menu-ye matni kar mikonad, ama baraye system-ha-ye modern kafi nist va aghlab az farayand-e boot do marhale-i estefade mishavad**
 
 ## UEFI
 English: **EFI (Extensible Firmware Interface) started by Intel in 1998 and is now standard. It uses the EFI System Partition (ESP) with FAT. On Linux, it’s at /boot/efi and files have a .efi extension. Each bootloader must be registered.**
-**فارسی: ** EFI (رابط فرمور قابل توسعه) توسط اینتل در ۱۹۹۸ شروع شد و اکنون استاندارد است. از پارتیشن EFI (ESP) با سیستم فایل FAT استفاده می‌کند. در لینوکس در /boot/efi قرار دارد و فایل‌ها پسوند .efi دارند. هر بوت‌لودر باید ثبت شود
+Finglish: **EFI (Extensible Firmware Interface) tavasot Intel dar 1998 shoroo shod va alan standard ast. Az EFI System Partition (ESP) ba FAT estefade mikonad. Dar Linux dar /boot/efi gharar darad va file-ha .efi extension darand. Har bootloader bayad sabt shavad**
 
 ## PCI
 English: **PCI allows the user to add extra components to the motherboard, like internal HDDs (PATA, SATA, SCSI), network cards, audio cards, and more.**
-**فارسی: ** PCI به کاربر اجازه می‌دهد قطعات اضافی را به مادربورد متصل کند، مانند هاردهای داخلی (PATA، SATA، SCSI)، کارت شبکه، کارت صدا و غیره
+Finglish: **PCI be user ejazeh midahad ta component-ha-ye ezafi ra be motherboard vasl konad, mesl-e HDD-haye dakheli (PATA, SATA, SCSI), card-e network, card-e audio va digar**
 
 ## SSD vs HDD
 English: **SSDs are faster, quieter, smaller, and use less energy. HDDs are cheaper, offer more storage, and easier data recovery. SSDs have no moving parts and can last 10+ years, while HDDs usually last 3-5 years**
-**فارسی: ** 
+Finglish: **SSD-ha sari-tar, khamosh-tar, koochak-tar va kam-tar energy estefade mikonand. HDD-ha arzan-tar, storage bishtar midahand va data recovery anha asan-tar ast. SSD-ha ghesmat-e movarand nadarand va mitavanand 10+ sal zendegi konand, dar hali ke HDD-ha aksaran 3-5 sal**
 
 ## Network cards vs Wireless cards
 English: **NICs provide wired Ethernet connectivity via RJ45, while wireless cards enable Wi-Fi access on computers, including industrial devices**
-**فارسی: ** (NIC) اتصال کابلی اترنت از طریق RJ45 فراهم می‌کند و کارت‌های وایرلس اتصال بی‌سیم (Wi-Fi) را روی کامپیوترها، حتی دستگاه‌های صنعتی، ممکن می‌سازند
+Finglish: **NIC etesal-e kabeli-e Ethernet az tariq-e RJ45 faraham mikonad, dar hali ke card-ha-ye wireless etesal-e Wi-Fi ra rooye computer-ha, hatta device-ha-ye industrial, momken mikonand**
 
 ## GPIO (General Purpose Input/Output)
 English: **GPIO allows the computer to control or communicate with other devices.**
-**فارسی: **به کامپیوتر اجازه می‌دهد تا دستگاه‌های دیگر را کنترل یا با آن‌ها ارتباط برقرار کند
+Finglish: **GPIO be computer ejazeh midahad ta device-ha-ye digar ra control ya ba anha ertebat barqarar konad**
 
 ## Sysfs
 English: **Sysfs is a virtual file system in Linux that provides information about hardware and kernel subsystems, and allows configuring devices. It is mounted at /sys**
-**فارسی: ** Sysfs یک سیستم فایل مجازی در لینوکس است که اطلاعات سخت‌افزار و زیرسیستم‌های کرنل را نمایش می‌دهد و امکان پیکربندی دستگاه‌ها را فراهم می‌کند. در مسیر /sys مانت می‌شود
+Finglish: **Sysfs yek system-file-e majazi dar Linux ast ke etela’at-e hardware va subsystems-e kernel ra neshan midahad va ejazeh mide ta device-ha ra config konid. Dar /sys mount shode ast**
 
 ## udev
 English: **udev is the device manager in Linux that handles /dev. It manages device nodes, reacts to hardware events, and allows custom rules to control device names and actions when devices are connected**
-**فارسی: ** udev مدیر دستگاه در لینوکس است که دایرکتوری /dev را مدیریت می‌کند. این ابزار نودهای دستگاه را کنترل می‌کند، به رویدادهای سخت‌افزاری واکنش نشان می‌دهد و اجازه می‌دهد نام و رفتار دستگاه‌ها هنگام اتصال به سیستم شخصی‌سازی شود.
+Finglish: **udev manager-e device dar Linux ast ke /dev ra modiriat mikonad. Node-ha-ye device ra control mikonad, be event-ha-ye hardware vasl mishavad va ejazeh mide rules-e custom baraye name va action-ha-ye device dar vaghti ke device-ha vasl mishavand**
 
 ## dbus
 English: **D-Bus is a message bus system in Linux that allows applications to communicate, coordinate processes, and launch services on demand**
-**فارسی: **D-Bus یک سیستم پیام‌رسان در لینوکس است که به برنامه‌ها امکان می‌دهد با هم ارتباط داشته باشند، فرآیندها را هماهنگ کنند و سرویس‌ها را به‌صورت درخواستی اجرا کنند
+Finglish: **D-Bus yek system-e message bus dar Linux ast ke be application-ha ejazeh midahad ba ham ertebat dashte bashand, process-ha ra coordinate konand va service-ha ra bar asase darkhast ejra konand**
 
 ## proc directory
 English: **/proc is a virtual filesystem in RAM where the kernel stores settings and properties. It shows information about IRQs, I/O ports, DMA, processes, and network settings**
-**فارسی: **/proc یک سیستم فایل مجازی در RAM است که کرنل تنظیمات و ویژگی‌ها را در آن نگه می‌دارد. اطلاعاتی درباره IRQها، پورت‌های I/O، DMA، فرآیندها و تنظیمات شبکه ارائه می‌دهد
+Finglish: **/proc yek filesystem majazi dar RAM ast ke kernel settings va properties ra dar an zakhire mikonad. Etela’at darbare IRQ-ha, I/O port-ha, DMA, process-ha va network settings neshan midahad**
 
 ## Kernel
 English: **The kernel needs drivers to work with hardware, which are stored in initrd or initramfs and used during boot**
-**فارسی: **کرنل برای کار با سخت‌افزار به درایورها نیاز دارد که در initrd یا initramfs ذخیره شده و هنگام بوت استفاده می‌شوند
+Finglish: **Kernel baraye kar ba hardware be driver-ha niyaz darad, ke dar initrd ya initramfs zakhire shode va dar boot estefade mishavand**
 
 ## Advanced Configuration and Power Interface (ACPI)
-English: **ACPI  is a standard that lets the operating system control hardware and power management more efficiently than BIOS.**
-**فارسی: **ACPI  یه استاندارده که به سیستم‌عامل اجازه می‌ده کنترل سخت‌افزار و مدیریت انرژی رو دقیق‌تر از BIOS انجام بده
+English: **ACPI is a standard that lets the operating system control hardware and power management more efficiently than BIOS.**
+Finglish: **ACPI yek standard ast ke be system-operating ejazeh mide hardware va power management ra bishtar az BIOS modiriat konad**
 
 ## zram
 English: **zram is a Linux kernel module that creates a compressed block device in RAM, which can be used as swap space or for temporary storage. It improves performance on systems with limited memory by reducing I/O to slower disks.**
-**فارسی: **یک ماژول کرنل لینوکس است که یک دیسک فشرده در حافظه RAM ایجاد می‌کند و می‌تواند به عنوان فضای swap یا ذخیره‌سازی موقت استفاده شود. این روش عملکرد سیستم‌هایی با حافظه محدود را با کاهش عملیات I/O روی دیسک‌های کندتر بهبود می‌بخشد 
-
+Finglish: **zram yek module-e kernel-e Linux ast ke yek block device feshorde dar RAM misazad, ke mitavanad be onvane swap space ya storage-e temporary estefade shavad. Performance system-ha ba memory mahdood ra ba kam kardan-e I/O be disk-ha-ye slow behtar mikonad**

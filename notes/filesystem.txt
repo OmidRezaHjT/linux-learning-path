@@ -1,25 +1,59 @@
 # filesystem
 
 ## Unix directories
-English and Farsi: **
-	bin: Essential command binaries / فایل‌های باینری ضروری دستورات
-	boot: Static files of the boot loader/ فایل‌های استاتیک بوت لودر
-	dev: Device files/ فایل‌های دستگاه
-	etc: Host-specific system configuration/ پیکربندی سیستم مخصوص میزبان
-	home: Home directory of the users / هوم دایرکتوری یوزر ها
-	lib: Essential shared libraries and kernel modules / کتابخانه‌های اشتراکی ضروری و ماژول‌های هسته
-	media: Mount point for removable media/ جایی برای مانت کردن رسانه های قابل جابجایی
-	mnt: Mount point for mounting a filesystem temporarily/ نقطه اتصال برای نصب موقت یک سیستم فایل
-	opt: Add-on application software packages/ بسته‌های نرم‌افزاری کاربردی افزونه
-	root: Home directory of the root user/ هوم دایرکتوری یوزر روت
-	sbin: Essential system binaries/ فایل‌های باینری ضروری سیستم
-	srv: Data for services provided by this system/ داده‌های مربوط به خدمات ارائه شده توسط این سیستم(سرور ها )
-	tmp: Temporary files, sometimes purged on each boot/ فایل‌های موقت، که گاهی اوقات با هر بار بوت شدن سیستم پاک می‌شوند
-	usr: Secondary hierarchy/ سلسله مراتب ثانویه
-	var: Variable data (logs, ...)/ داده‌های متغیر (لاگ‌ها، ...)
-	**
+English and Finglish: **
+	bin: Essential command binaries / File-ha-ye binary-e zaroori dastoorat
+	boot: Static files of the boot loader / File-ha-ye static-e boot loader
+	dev: Device files / File-ha-ye dastgah
+	etc: Host-specific system configuration / Pیکربندی system makhsoos-e host
+	home: Home directory of the users / Home directory-e users
+	lib: Essential shared libraries and kernel modules / Ketabkhane-ha-ye eshteraki-e zaroori va module-ha-ye kernel
+	media: Mount point for removable media / Ja-yi baraye mount kardan-e resane-ye ghabl-e jabejai
+	mnt: Mount point for mounting a filesystem temporarily / Noghte-ye etesal baraye nasb-e movaghat-e yek filesystem
+	opt: Add-on application software packages / Baste-ha-ye narm-afzari-ye ezafe
+	root: Home directory of the root user / Home directory-e root user
+	sbin: Essential system binaries / File-ha-ye binary-e zaroori-e system
+	srv: Data for services provided by this system / Dade-ha-ye marboot be services-e araye shode tavasot in system (server-ha)
+	tmp: Temporary files, sometimes purged on each boot / File-ha-ye movaghat, ke gahi ba har bar boot shodan pak mishavand
+	usr: Secondary hierarchy / Selseleh marateb-e sanaviye
+	var: Variable data (logs, ...) / Dade-ha-ye motaghayer (log-ha, ...)**
 
 ## Partitions
-Engish: **In Linux, disks are split into partitions (e.g., /dev/sda1, /dev/sdb5), seen as separate drives. Old BIOS used MBR (max 4 primary + logical inside extended), while UEFI uses GPT (up to 128 partitions)**
-**فارسی: **در لینوکس، دیسک‌ها به پارتیشن تقسیم می‌شوند (مثل /dev/sda1, /dev/sdb5) و هرکدام مانند یک دیسک جدا دیده می‌شوند. بایوس از MBR (حداکثر ۴ پارتیشن اصلی + منطقی در Extended) استفاده می‌کرد، اما UEFI از GPT (تا ۱۲۸ پارتیشن) پشتیبانی می‌کند
+English: **In Linux, disks are split into partitions (e.g., /dev/sda1, /dev/sdb5), seen as separate drives. Old BIOS used MBR (max 4 primary + logical inside extended), while UEFI uses GPT (up to 128 partitions)**
+Finglish: **Dar Linux, disk-ha be partition taghsim mishavand (mesl-e /dev/sda1, /dev/sdb5) va har kodam manand yek disk-e joda dida mishavand. BIOS az MBR estefade mikard (max 4 partition asli + logical dar Extended) va UEFI az GPT (ta 128 partition) poshtibani mikonad**
+
+## Linking
+English: **When writing programs, we use libraries. Linking libraries can be:
+
+Static Linking: The library is included in the executable. The program becomes larger but runs independently of other libraries.
+
+Dynamic Linking: The program depends on external libraries installed separately. This keeps the program smaller, more secure, and allows library updates to improve all programs using it.
+
+Linux dynamic libraries usually look like libLIBNAME.so.VERSION and are in /lib*/ or /usr/lib*/. On Windows, these are called DLLs. Dynamic linking is also called shared libraries because multiple programs share the same library.**
+Finglish: **Vaghti barname minevisim, az library-ha estefade mikonim. Link kardan library-ha mitavanad bashad:
+
+Static Linking: Library dar executable shamel mishavad. Barname bozorgtar mishavad vali be digar library-ha moteasel nist.
+
+Dynamic Linking: Barname be library-ha-ye khareji ke joda nasb shode and, moteasel ast. In barname ra koochaktar va amn-tar mikonad va ejaze midahad update-ha-ye library hame barname-ha ra behtar konad.
+
+Linux dynamic library-ha aksaran shabih be libLIBNAME.so.VERSION mibashand va dar /lib*/ ya /usr/lib*/ gharar darand. Dar Windows, be anha DLL migoyand. Dynamic linking hamchenin shared libraries ham gofte mishavad chon chand barname yek library ra share mikonand**
+
+## Symbolic links for libraries
+English: **If you are writing a program and you use udev functions, you will ask for a library called libudev.so.1. But a Linux distro, might call its version of udev library libudev.so.1.4.0. How can we solve this problem? The answer is symbolic links; You will learn more about them in the next chapters but for short, a symbolic name is a new name for the same file**
+Finglish: **Vaghti barname-i az toabe udev estefade mikonad, momken ast be library-i mesl-e libudev.so.1 niaz dashte bashad. Ama version nasb shode momken ast libudev.so.1.4.0 bashad. Rah-hal, link-e symbolic ast; ke name jadid baraye hamon file ijad mikonad**
+
+## Dynamic library configs and cache
+English: **Dynamic linking in Linux is configured using the text file /etc/ld.so.conf. On Ubuntu, it usually points to additional config files in /etc/ld.so.conf.d/, but all entries could also be included directly in the main file**
+Finglish: **Link dynamic dar Linux ba estefade az file matni /etc/ld.so.conf config mishavad. Dar Ubuntu, aksaran be file-ha-ye config ezafe dar /etc/ld.so.conf.d/ eshare mikonad, vali hameye khat-ha mitavanand mostaghiman dar file asli gharar girand**
+
+If you change the ld.so.conf (or sub-directories) you need to run ldconfig. Try it with -v switch to see the progress "/" data
+
+## Where OS finds dynamic libraries
+English: **When a program needs a shared library, Linux searches in this order: LD_LIBRARY_PATH, program’s PATH, /etc/ld.so.conf (and included files), /lib/, /lib64/, /usr/lib/, /usr/lib64/. You can override defaults by setting LD_LIBRARY_PATH to custom library directories before running a program**
+Finglish: **Vaghti barnamei be shared library niaz darad, Linux be tartib dar in masir-ha jostojo mikonad: LD_LIBRARY_PATH, program’s PATH , /etc/ld.so.conf (va file-haye ezafe), /lib/, /lib64/, /usr/lib/, /usr/lib64/. Mitavanid pishfarz-ha ra ba set kardan LD_LIBRARY_PATH be directory-ha-ye library-ye khod pish az ejra-ye barname override konid**
+
+
+## Loading dynamically
+English: **Linux can run programs using a dynamic linker (ld or ld-linux) to load the required dynamic libraries. ELF executables specify this automatically, so you don’t need to run ld-linux manually**
+Finglish: **Linux mitavanad barname-ha ra ba estefade az dynamic linker (ld ya ld-linux) ejra kone ta library-ha-ye dynamic mored niaz ra load konad. Executable-ha-ye ELF khodashun moshakhas mikonand ke ba ld-linux ejra shavand, pas niazi be run kardan manual nadarad**
 
