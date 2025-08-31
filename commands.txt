@@ -247,4 +247,28 @@ English: **Low-level package manager for Debian-based systems. It installs, remo
 Finglish: **Package manager dar sath-e payin baraye Debian-base shode. Baraye nasb, hazf va daryaft etela'at dar mored .deb package-ha estefade mishe, vali dependency-ha ro khodesh automatic handle nemikone(Important switches: -i = install, -r = remove, -l = list, -s = status, -L = show files in package)** 
   In some cases a package is installed but without proper dependencies (say using dpkg) or an installation is interrupted for any reason. In these cases a apt-get install -f might help, -f is for fix broken :)
 
+## yum
+"yum [option] [command]"
+English: **Command-line package manager for RPM-based distributions (like CentOS, RHEL, Fedora before DNF), handles dependencies automatically(Important switches/commands:install = install package, remove = remove package, update = update installed packages, search = search for packages, info = show package info, list = list available/installed packages,clean all = clear cache and metadata)
+yum update → Updates all packages to the latest version, but does not remove obsolete packages
+yum upgrade → Updates all packages and removes obsolete or unnecessary ones***
+Finglish: **Abzar modiriyat pakesh baraye distro-haye RPM (mesl CentOS, RHEL, Fedora ghabl az DNF), ba tamarkoz roye hal kardan dependency-ha(install = install package, remove = remove package, update = update installed packages, search = search for packages, info = show package info, list = list available/installed packages,clean all = clear cache and metadata)
+yum update → hame package-ha ro be latest version update mikone, vali obsolete-ha ro pak nemikone
+yum upgrade → mesle update hast vali obsolete o extra package-ha ro ham remove mikone**
+
+
+## rpm
+"rpm [option] [command]"
+English: **Low-level package manager for Red Hat-based systems, works directly with .rpm files (not handling dependencies automatically)(Important switches/commands: -i = install, -U = upgrade, -e = erase/remove, -q = query package, -V = verify package integrity, -qa = list all installed packages)**
+Finglish: **Modir pakesh dar Red Hat-based ke mostaghim ba file-haye .rpm kar mikone (be sorat otomatik dependensi-ha ro hal nemikone)(Important switches/commands: -i = install, -U = upgrade, -e = erase/remove, -q = query package, -V = verify package integrity, -qa = list all installed packages)**
+
+## dnf
+"dnf [options] [command]"
+English: **Modern package manager for RPM-based systems (replacement for yum). It can install, update, upgrade, and remove packages (Important switches/commands: update: refreshes package lists and updates packages, upgrade: same as update but also handles obsolete packages)(Important switches/commands: install = install package, remove = remove package, update = update packages, upgrade = update + handle obsolete packages, autoremove = remove unused dependencies, search = search packages, info = show package information)**
+Finglish: Package manager jadid baraye system-haye RPM-based (jaygozin yum). Mitune package-ha ro nasb, update, upgrade va hazf kone (Important switches/commands: update: list va package-ha ro update mikone, upgrade: mesle update vali obsolete package-ha ro ham handle mikone)(Important switches/commands: install = install package, remove = remove package, update = update packages, upgrade = update + handle obsolete packages, autoremove = remove unused dependencies, search = search packages, info = show package information)**
+
+## zypper
+"zypper [options] [command]"
+English: **Command-line package manager for openSUSE and SUSE Linux Enterprise. It can install, update, remove packages, and manage repositories (Important switches/commands: refresh: refresh repository metadata, update: update installed packages, install = install package, remove = remove package, search = search for packages, info = show package details)**
+Finglish: **Package manager command-line baraye openSUSE va SUSE Linux Enterprise. Mitune package-ha ro nasb, update, hazf kone va repository-ha ro manage kone (Important switches/commands: refresh: metadata repository ro tazeh mikone, update: package-ha-ye nasb shode ro update mikone, install = nasb package, remove = hazf package, search = jostoju package-ha, info = namayesh etela'at package)**
 
