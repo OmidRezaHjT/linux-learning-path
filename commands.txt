@@ -272,32 +272,3 @@ Finglish: Package manager jadid baraye system-haye RPM-based (jaygozin yum). Mit
 English: **Command-line package manager for openSUSE and SUSE Linux Enterprise. It can install, update, remove packages, and manage repositories (Important switches/commands: refresh: refresh repository metadata, update: update installed packages, install = install package, remove = remove package, search = search for packages, info = show package details)**
 Finglish: **Package manager command-line baraye openSUSE va SUSE Linux Enterprise. Mitune package-ha ro nasb, update, hazf kone va repository-ha ro manage kone (Important switches/commands: refresh: metadata repository ro tazeh mikone, update: package-ha-ye nasb shode ro update mikone, install = nasb package, remove = hazf package, search = jostoju package-ha, info = namayesh etela'at package)**
 
-sudo bash -c 'cat > /etc/bind/db.maktab.edu <<EOF
-\$TTL 604800
-@   IN  SOA ns1.maktab.edu. admin.maktab.edu. (
-        1       ; Serial
-        604800  ; Refresh
-        86400   ; Retry
-        2419200 ; Expire
-        604800 ) ; Negative Cache TTL
-;
-@       IN  NS  ns1.maktab.edu.
-ns1     IN  A   10.0.0.1
-www     IN  A   10.0.0.2
-EOF' 
-
-sudo bash -c 'cat > /etc/bind/db.10.dns <<EOF
-\$TTL 604800
-@   IN  SOA ns1.maktab.edu. admin.maktab.edu. (
-        1
-        604800
-        86400
-        2419200
-        604800 )
-;
-@       IN  NS  ns1.maktab.edu.
-1       IN  PTR ns1.maktab.edu.
-2       IN  PTR www.maktab.edu.
-EOF'
-
-sudo systemctl restart bind9
