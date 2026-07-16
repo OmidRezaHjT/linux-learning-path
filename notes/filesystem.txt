@@ -52,8 +52,10 @@ If you change the ld.so.conf (or sub-directories) you need to run ldconfig. Try 
 English: **When a program needs a shared library, Linux searches in this order: LD_LIBRARY_PATH, program’s PATH, /etc/ld.so.conf (and included files), /lib/, /lib64/, /usr/lib/, /usr/lib64/. You can override defaults by setting LD_LIBRARY_PATH to custom library directories before running a program**
 Finglish: **Vaghti barnamei be shared library niaz darad, Linux be tartib dar in masir-ha jostojo mikonad: LD_LIBRARY_PATH, program’s PATH , /etc/ld.so.conf (va file-haye ezafe), /lib/, /lib64/, /usr/lib/, /usr/lib64/. Mitavanid pishfarz-ha ra ba set kardan LD_LIBRARY_PATH be directory-ha-ye library-ye khod pish az ejra-ye barname override konid**
 
-
 ## Loading dynamically
 English: **Linux can run programs using a dynamic linker (ld or ld-linux) to load the required dynamic libraries. ELF executables specify this automatically, so you don’t need to run ld-linux manually**
 Finglish: **Linux mitavanad barname-ha ra ba estefade az dynamic linker (ld ya ld-linux) ejra kone ta library-ha-ye dynamic mored niaz ra load konad. Executable-ha-ye ELF khodashun moshakhas mikonand ke ba ld-linux ejra shavand, pas niazi be run kardan manual nadarad**
 
+## Container
+English: An isolated user-space environment that shares the host operating system kernel.
+Finglish: Mohit-e joda shode-ei ke kernel-e host ra ba sayere container-ha moshtarak estefade mikonad.

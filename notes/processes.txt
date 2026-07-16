@@ -61,3 +61,37 @@ Finglish: **Version 1 GRUB (0.9) aksaran dar /boot/grub nasb mishavad. File-e co
 English: **GRUB2 is the most common bootloader today. On BIOS systems, it’s installed in /boot/grub/ or /boot/grub2/, and on UEFI systems, in /boot/efi/EFI/distro-name/ (e.g., /boot/efi/EFI/fedora/). Its configuration file is grub.cfg. GRUB2 uses Linux-style partition numbering: the first partition on the first disk is (hd0,1) (or (hd0,msdos1) for DOS partitions, (hd0,gpt1) for GPT)**
 Finglish: **GRUB2 akseran bootloader-e mojood dar BIOS system-ha dar /boot/grub/ ya /boot/grub2/ nasb mishavad, va dar UEFI system-ha dar /boot/efi/EFI/distro-name/ (mesl-e /boot/efi/EFI/fedora/) gharar darad. File-e config an grub.cfg ast. GRUB2 az Linux-style partition numbering estefade mikonad: avalin partition dar avalin disk (hd0,1) ast (ya (hd0,msdos1) baraye DOS partition-ha, (hd0,gpt1) baraye GPT)**
 
+####Creating a Virtual Machine
+	## OVF (Open Virtualization Format)
+	English: A standard format for describing and transferring virtual machines between different hypervisors.
+	Finglish: Yek format standard baraye tarif va enteghal Virtual Machine beyn hypervisor-haye mokhtalef.
+
+	## OVA (Open Virtualization Archive)
+	English: A single archive file containing an OVF package and all related virtual machine files.
+	Finglish: Yek archive ke file-haye OVF va tamami file-haye marboot be Virtual Machine ra dar khod darad.
+
+	## Template
+	English: A master virtual machine used to quickly create identical virtual machines.
+	Finglish: Yek Virtual Machine asli ke baraye sakhtan VM-haye jadid estefade mishe.
+
+#### Guest-specific configs
+	## Machine ID
+	English: A unique identifier assigned to each Linux system. It should be regenerated after cloning a machine.
+	Finglish: Shenase-ye monhaser be fard-e har system Linux ast va bad az clone bayad dobare sakhte shavad.
+
+	## UUID
+	English: A Universally Unique Identifier used to uniquely identify disks, partitions, filesystems, and other system objects.
+ 	Finglish: Shenase-ye monhaser be fard baraye disk-ha, partition-ha, filesystem-ha va sayere object-haye system.	
+
+#### Cloud
+	## IaaS (Infrastructure as a Service)
+	English: A cloud service model that provides virtual machines, storage, networking, and other infrastructure on demand.
+	Finglish: Model-e cloud ke VM, storage, network va zirsaakht ra be sorat on-demand erae mikonad.
+
+	## SaaS (Software as a Service)
+	English: A cloud model where software is accessed over the Internet without local installation.
+	Finglish: Model-ei az cloud ke narm-afzar az tarigh internet estefade mishavad va niaz be nasb nadarad.
+
+	## cloud-init
+	English: A tool that automatically configures cloud virtual machines during their first boot.
+	Finglish: Abzari baraye config-e automatic-e VM-haye cloud dar avalin boot.

@@ -26,11 +26,11 @@ Finglish: **SSD-ha sari-tar, khamosh-tar, koochak-tar va kam-tar energy estefade
 
 ## Network cards vs Wireless cards
 English: **NICs provide wired Ethernet connectivity via RJ45, while wireless cards enable Wi-Fi access on computers, including industrial devices**
-Finglish: **NIC etesal-e kabeli-e Ethernet az tariq-e RJ45 faraham mikonad, dar hali ke card-ha-ye wireless etesal-e Wi-Fi ra rooye computer-ha, hatta device-ha-ye industrial, momken mikonand**
+Finglish: **NIC etesal-e kabeli-e Ethernet az tarigh-e RJ45 faraham mikonad, dar hali ke card-ha-ye wireless etesal-e Wi-Fi ra rooye computer-ha, hatta device-ha-ye industrial, momken mikonand**
 
 ## GPIO (General Purpose Input/Output)
 English: **GPIO allows the computer to control or communicate with other devices.**
-Finglish: **GPIO be computer ejazeh midahad ta device-ha-ye digar ra control ya ba anha ertebat barqarar konad**
+Finglish: **GPIO be computer ejazeh midahad ta device-ha-ye digar ra control ya ba anha ertebat bargharar konad**
 
 ## Sysfs
 English: **Sysfs is a virtual file system in Linux that provides information about hardware and kernel subsystems, and allows configuring devices. It is mounted at /sys**
@@ -59,3 +59,16 @@ Finglish: **ACPI yek standard ast ke be system-operating ejazeh mide hardware va
 ## zram
 English: **zram is a Linux kernel module that creates a compressed block device in RAM, which can be used as swap space or for temporary storage. It improves performance on systems with limited memory by reducing I/O to slower disks.**
 Finglish: **zram yek module-e kernel-e Linux ast ke yek block device feshorde dar RAM misazad, ke mitavanad be onvane swap space ya storage-e temporary estefade shavad. Performance system-ha ba memory mahdood ra ba kam kardan-e I/O be disk-ha-ye slow behtar mikonad**
+
+## Hypervisor (VMM)
+English: Software that creates, runs, and manages virtual machines.
+Finglish: Narm-afzari ke Virtual Machine-ha ro eijad, ejra va modiriyat mikone.
+
+## Type 1 Hypervisor
+English: Runs directly on physical hardware (bare-metal), without a host operating system.
+Finglish: Mostaghim ruye hardware ejra mishe va be host OS niaz nadare.
+
+## Type 2 Hypervisor
+English: Runs as an application on a host operating system and manages guest virtual machines.
+Finglish: Ruye host OS be onvan yek barname ejra mishe va VM-ha ro modiriyat mikone.
+
