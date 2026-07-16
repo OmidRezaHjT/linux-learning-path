@@ -223,8 +223,12 @@ Finglish: **Baraye ejra-ye dastkari-ye barname ba dynamic linker an, va load kar
 
 ## apt
 "apt [options] [command]"
-English: **Used to manage packages in Debian-based systems (like Ubuntu). It can install, update, upgrade, search, and remove software (update: refreshes package lists, upgrade: installs newer versions of installed packages)(Important switches/commands: install = install package, remove = remove package, update = update package lists, upgrade = upgrade all packages, search = search for package, show = show package info)**
+English: **Used to manage packages in Debian-based systems (like Ubuntu). It can install, update, upgrade, search, and remove software (update: refreshes package lists, upgrade: installs newer versions of installed packages)(Important switches/commands: install = install package, remove = remove package, update = update package lists, 
+upgrade = upgrade all packages, search = search for package, show = show package info)**
+*If you want to upgrade your distribution,You can use : sudo apt dist-upgrade
+*If you encounter broken dependencies, you can fix them using: sudo apt install -f
 Finglish: Baraye modiriyat package-ha dar system-haye mabna bar Debian (mesl Ubuntu) estefade mishe. Mitune software nasb, update, upgrade, search ya hazf kone (update: list package-ha ro tazeh mikone, upgrade: version jadid package-haye nasb shode ro nasb mikone)(Important switches/commands: install = install package, remove = remove package, update = update package lists, upgrade = upgrade all packages, search = search for package, show = show package info)**
+*Age mikhayd distribution eton ro upgrade konid mitonid az in commad estefade konid  : sudo apt dist-upgrade
 
 ## apt-get
 "apt-get [options] [command]"
