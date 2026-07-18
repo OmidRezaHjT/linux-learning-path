@@ -95,3 +95,19 @@ Finglish: **GRUB2 akseran bootloader-e mojood dar BIOS system-ha dar /boot/grub/
 	## cloud-init
 	English: A tool that automatically configures cloud virtual machines during their first boot.
 	Finglish: Abzari baraye config-e automatic-e VM-haye cloud dar avalin boot.
+
+## Environment Variables
+English: Variables that store shell and system configuration values, such as PATH, HOME, USER, and SHELL.
+Finglish: Variable-hayi ke etela'at va config-haye shell va system mesl PATH, HOME, USER va SHELL ra negah midarand.
+
+## PATH
+English: A colon-separated list of directories searched for executable commands.
+Finglish: Liste-i az directory-ha ke ba ":" az ham joda shode-and va shell baraye peyda kardan executable-ha dar anha search mikonad.
+
+## Quoting / Escaping
+English: Techniques used to prevent special characters from being interpreted by the shell.
+Finglish: Ravesh-hayi baraye jelogiri az tafsir shodan character-haye vizhe tavasot shell.
+
+## Shell Builtin
+English: A command implemented inside the shell, without requiring an external executable.
+Finglish: Command-i ke dakhel khod-e shell piade-sazi shode va be executable khareji niaz nadarad.

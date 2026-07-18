@@ -276,3 +276,77 @@ Finglish: Package manager jadid baraye system-haye RPM-based (jaygozin yum). Mit
 English: **Command-line package manager for openSUSE and SUSE Linux Enterprise. It can install, update, remove packages, and manage repositories (Important switches/commands: refresh: refresh repository metadata, update: update installed packages, install = install package, remove = remove package, search = search for packages, info = show package details)**
 Finglish: **Package manager command-line baraye openSUSE va SUSE Linux Enterprise. Mitune package-ha ro nasb, update, hazf kone va repository-ha ro manage kone (Important switches/commands: refresh: metadata repository ro tazeh mikone, update: package-ha-ye nasb shode ro update mikone, install = nasb package, remove = hazf package, search = jostoju package-ha, info = namayesh etela'at package)**
 
+## bash
+"bash"
+English: GNU Bourne Again Shell, the default command-line shell on most Linux systems.
+Finglish: Shell pishfarz dar bishtar system-haye Linux ke command-ha ra ejra mikonad.
+
+## env
+"env"
+English: Displays all environment variables or runs a command with modified environment variables.
+Finglish: Tamam environment variable-ha ra namayesh midahad ya yek command ra ba environment taghir karde ejra mikonad.
+
+## export
+"export [variable=value]"
+English: Makes a shell variable available to child processes.
+Finglish: Yek variable ra baraye process-haye farzand (child process) dar dastres gharar midahad.
+
+## set
+"set"
+English: Displays or changes shell variables and shell options.
+Finglish: Shell variable-ha va option-haye shell ra namayesh ya taghir midahad.
+
+##unset
+"unset [variable]"
+English: Removes a shell or environment variable.
+Finglish: Yek shell ya environment variable ra hazf mikonad.
+
+## type
+"type [command]"
+English: Shows how a command is interpreted (builtin, alias, function, or executable).
+Finglish: Moshakhas mikonad yek command builtin, alias, function ya executable ast.
+
+## which
+"which [command]"
+English: Shows the location of an executable found in the PATH.
+Finglish: Masir executable-i ke dar PATH peyda mishavad ra namayesh midahad.
+
+## whereis
+"whereis [command]"
+English: Locates the binary, source, and manual files of a command.
+Finglish: Binary, source va man page-haye yek command ra peyda mikonad.
+
+## readlink
+"readlink [file]"
+English: Displays the target of a symbolic link.
+Finglish: Maqsad-e yek symbolic link ra namayesh midahad.
+
+## history
+"history"
+English: Displays or manages the shell command history.
+Finglish: Tarikhche-ye command-haye shell ra namayesh ya modiriyat mikonad.
+
+## exit
+"exit"
+English: Exits the current shell session.
+Finglish: Az shell-e feli kharej mishavad.
+
+## exec
+"exec [command]"
+English: Replaces the current shell process with another command without creating a new process.
+Finglish: Process-e shell-e feli ra ba yek command digar jaygozin mikonad bedune ijad process-e jadid.
+
+## cd
+"cd [directory]"
+English: Changes the current working directory.
+Finglish: Directory-e feli ra taghir midahad.
+
+## pwd
+"pwd"
+English: Displays the current working directory.
+Finglish: Masir-e directory-e feli ra namayesh midahad.
+
+echo
+"echo [text]"
+English: Prints text or the value of variables to the terminal.
+Finglish: Matn ya meghdar-e variable-ha ra dar terminal namayesh midahad.
