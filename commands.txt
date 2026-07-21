@@ -346,7 +346,102 @@ Finglish: Directory-e feli ra taghir midahad.
 English: Displays the current working directory.
 Finglish: Masir-e directory-e feli ra namayesh midahad.
 
-echo
+## echo
 "echo [text]"
 English: Prints text or the value of variables to the terminal.
 Finglish: Matn ya meghdar-e variable-ha ra dar terminal namayesh midahad.
+
+## cat
+"cat [file]"
+English: Displays the contents of one or more files or reads from standard input. (Important switches: -n = show line numbers, -s = squeeze blank lines, -T = show tabs, -v = show non-printing characters)
+Finglish: Mohtavaye yek ya chand file ra namayesh midahad ya az standard input mikhanad. ( switch haye mohem: -n = show line numbers, -s = squeeze blank lines, -T = show tabs, -v = show non-printing characters)
+
+## zcat
+"zcat [file.gz]"
+English: Displays the contents of a gzip-compressed file without extracting it first.
+Finglish: Mohtavaye file-haye gzip ra bedun extract kardan namayesh midahad.
+
+## gzcat
+"gzcat [file.gz]"
+English: Displays the contents of a gzip-compressed file without extracting it first.
+Finglish: Mohtavaye file-haye gzip ra bedun extract kardan namayesh midahad.
+
+## less
+"less [file]"
+English: Views large text files page by page with search and navigation support.
+Finglish: File-haye matni bozorg ra be surat safhe be safhe ba emkan-e search va navigation namayesh midahad.
+
+## od
+"od [file]"
+English: Displays the contents of a file in different formats such as octal, hexadecimal, or character format. (Important switches: -a = named characters, -c = characters, -t = output format, -A = offset format)
+Finglish: Mohtavaye file ra dar format-haye mokhtalef mesl octal, hexadecimal ya character namayesh midahad. (Important switches: -a = named characters, -c = characters, -t = output format, -A = offset format)
+
+## split
+"split [options] [file]"
+English: Splits a file into smaller pieces. (Important switches: -l = split by lines, -b = split by bytes, -n = split into number of files, -d = numeric suffixes)
+Finglish: Yek file bozorg ra be bakhsh-haye koochaktar taghsim mikonad. (Important switches: -l = split by lines, -b = split by bytes, -n = split into number of files, -d = numeric suffixes)
+
+## head
+"head [options] [file]"
+English: Displays the first lines of a file. (Important switches: -n = number of lines)
+Finglish: Avalin khat-haye yek file ra namayesh midahad. (Important switches: -n = number of lines)
+
+## tail
+"tail [options] [file]"
+English: Displays the last lines of a file. (Important switches: -n = number of lines, -f = follow appended data)
+Finglish: Akharin khat-haye yek file ra namayesh midahad. (Important switches: -n = number of lines, -f = follow appended data)
+
+## cut
+"cut [options] [file]"
+English: Extracts selected columns or characters from each line of a file. (Important switches: -f = fields, -d = delimiter, -c = characters)
+Finglish: Soton-ha ya character-haye entekhab shode ra az har khat estekhraj mikonad. (Important switches: -f = fields, -d = delimiter, -c = characters)
+
+## nl
+"nl [file]"
+English: Displays a file with line numbers.
+Finglish: File ra hamrah ba shomare khat-ha namayesh midahad.
+
+## sort
+"sort [options] [file]"
+English: Sorts lines of text alphabetically or numerically. (Important switches: -r = reverse, -n = numeric sort)
+Finglish: Khat-haye matn ra be surat alphabeti ya adadi sort mikonad. (Important switches: -r = reverse, -n = numeric sort)
+
+## uniq
+"uniq [options]"
+English: Removes or reports duplicate adjacent lines. (Important switches: -c = count duplicates, -d = show duplicates, -u = show unique lines)
+Finglish: Khat-haye tekrari-e kenar ham ra hazf ya gozaresh mikonad. (Important switches: -c = count duplicates, -d = show duplicates, -u = show unique lines)
+
+## paste
+"paste [file1] [file2]"
+English: Merges lines from multiple files side by side.
+Finglish: Khat-haye chand file ra kenar ham gharar midahad.
+
+## tr
+"tr [set1] [set2]"
+English: Translates or deletes characters from standard input.
+Finglish: Character-ha ra az standard input tabdil ya hazf mikonad.
+
+## sed
+"sed [options]"
+English: A stream editor used to search, replace, and edit text streams. (Important switches: s/A/B/ = replace first match, s/A/B/g = replace all matches, -i = edit file in place)
+Finglish: Yek stream editor baraye search, replace va virayesh matn ast. (Important switches: s/A/B/ = replace first match, s/A/B/g = replace all matches, -i = edit file in place)
+
+## wc
+"wc [options] [file]"
+English: Counts lines, words, and bytes in a file or stream. (Important switches: -l = lines, -w = words, -c = bytes)
+Finglish: Tedad khat-ha, kalamat va byte-haye yek file ya stream ra mishomarad. (Important switches: -l = lines, -w = words, -c = bytes)
+
+## md5sum
+"md5sum [file]"
+English: Calculates and verifies the MD5 hash of a file.
+Finglish: Hash-e MD5 yek file ra mohasebe va barrasi mikonad.
+
+## sha256sum
+"sha256sum [file]"
+English: Calculates and verifies the SHA-256 hash of a file.
+Finglish: Hash-e SHA-256 yek file ra mohasebe va barrasi mikonad.
+
+## sha512sum
+"sha512sum [file]"
+English: Calculates and verifies the SHA-512 hash of a file.
+Finglish: Hash-e SHA-512 yek file ra mohasebe va barrasi mikonad.

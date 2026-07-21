@@ -111,3 +111,7 @@ Finglish: Ravesh-hayi baraye jelogiri az tafsir shodan character-haye vizhe tava
 ## Shell Builtin
 English: A command implemented inside the shell, without requiring an external executable.
 Finglish: Command-i ke dakhel khod-e shell piade-sazi shode va be executable khareji niaz nadarad.
+
+## Streams
+English: Streams are sequences of bytes used for input and output. Linux mainly uses three standard streams: stdin (input), stdout (normal output), and stderr (error output).
+Finglish: Stream-ha tavali-ei az byte-ha hastand ke baraye voroodi va khorooji estefade mishavand. Linux se stream-e asli darad: stdin (voroodi), stdout (khorooji mamooli) va stderr (khorooji error).
