@@ -445,3 +445,88 @@ Finglish: Hash-e SHA-256 yek file ra mohasebe va barrasi mikonad.
 "sha512sum [file]"
 English: Calculates and verifies the SHA-512 hash of a file.
 Finglish: Hash-e SHA-512 yek file ra mohasebe va barrasi mikonad.
+
+## ls
+"ls [options] [file/directory]"
+English: Moves or renames files and directories (Important switches: -f = force overwrite, -i = confirm before overwrite, -b = create backup)
+Finglish: File-ha va directory-ha ra move ya rename mikonad (Important switches: -f = overwrite ba force, -i = gereftan taeed ghabl az overwrite, -b = sakht backup)
+
+## cp
+"cp [options] source destination"
+English: Copies files and directories (Important switches: -r/-R = copy directories recursively, -f = force overwrite, -i = confirm before overwrite, -b = create backup, -p = preserve file attributes)
+Finglish: File-ha va directory-ha ra copy mikonad (Important switches: -r/-R = copy recursive directory, -f = overwrite ba force, -i = gereftan taeed ghabl az overwrite, -b = sakht backup, -p = hefz attribute-ha)
+
+## mv
+"mv [options] source destination"
+English: Moves or renames files and directories (Important switches: -f = force overwrite, -i = confirm before overwrite, -b = create backup)
+Finglish: File-ha va directory-ha ra move ya rename mikonad (Important switches: -f = overwrite ba force, -i = gereftan taeed ghabl az overwrite, -b = sakht backup)
+
+## rm
+"rm [options] file"
+English: Removes files and directories (Important switches: -r/-R = remove recursively, -f = force removal, -i = ask before removing)
+Finglish: File-ha va directory-ha ra hazf mikonad (Important switches: -r/-R = hazf recursive, -f = hazf ba force, -i = gereftan taeed ghabl az hazf)
+
+## mkdir
+"mkdir [options] directory"
+English: Creates directories (Important switches: -p = create parent directories if needed)
+Finglish: Directory jadid misazad (Important switches: -p = sakht parent directory dar surat-e niaz)
+
+## rmdir
+"rmdir [options] directory"
+English: Removes empty directories (Important switches: -p = remove empty parent directories as well)
+Finglish: Directory-haye khali ra hazf mikonad (Important switches: -p = hazf parent directory-haye khali niz)
+
+## touch
+"touch [options] file"
+English: Creates an empty file or updates file timestamps (Important switches: -d = specify date/time, -t = specify timestamp, -r = use another file's timestamp)
+Finglish: Yek file khali misazad ya timestamp file ra update mikonad (Important switches: -d = taeen tarikh/zaman, -t = timestamp moshakhas, -r = estefade az timestamp file digar)
+
+## file
+"file [options] file"
+English: Determines the type of a file by examining its contents (Important switches: -i = show MIME type)
+Finglish: Noe file ra ba barrasi mohtavayat tashkhis midahad (Important switches: -i = namayesh MIME type)
+
+## dd
+"dd if=input of=output [option]"
+English: Copies and converts data between files or block devices (Important options: if = input file, of = output file, bs = block size, count = number of blocks)
+Finglish: Data ra beyn file-ha ya block device-ha copy va convert mikonad (Important options: if = file voroodi, of = file khorooji, bs = andaze block, count = tedad block-ha)
+
+## find
+"find [path] [expression]"
+English: Searches for files and directories based on different criteria and can execute actions on them (Important switches: -name/-iname = search by name, -type = file type,-empty = empty files, -size = file size, -mtime = modification time, -exec = execute command, -delete = delete found files)
+Finglish: File-ha va directory-ha ra bar asas sharayet mokhtalef peyda mikonad va mitavanad roye anha amal anjam dahad (Important switches: -name/-iname = jostoju bar asas nam, -type = noe file, -empty = file haye khali,-size = andaze file, -mtime = zaman taghir, -exec = ejraye command, -delete = hazf file-haye peyda shode)
+
+## gzip 
+"gzip [option] file"
+English: Compresses files using the gzip algorithm (Important switches: -k = keep original file, -d = decompress)
+Finglish: File-ha ra ba algorithm-e gzip feshorde mikonad (Important switches: -k = hefz file asli, -d = az halat-e feshorde kharej kardan)
+
+## gunzip
+"gunzip [option] file.gz"
+English: Decompresses gzip-compressed files (Important switches: -k = keep compressed file, -f = force decompression)
+Finglish: File-haye gzip shode ra az halat-e feshorde kharej mikonad (Important switches: -k = hefz file feshorde, -f = force baraye decompression)
+
+## bzip2 
+"bzip2 [option] file"
+English: Compresses files using the bzip2 algorithm (Important switches: -k = keep original file, -d = decompress)
+Finglish: File-ha ra ba algorithm-e bzip2 feshorde mikonad (Important switches: -k = hefz file asli, -d = decompression)
+
+## bunzip2
+"bunzip2 [options] file.bz2"
+English: Decompresses bzip2-compressed files (Important switches: -k = keep compressed file, -f = force decompression)
+Finglish: File-haye bzip2 shode ra az halat-e feshorde kharej mikonad (Important switches: -k = hefz file feshorde, -f = force decompression)
+
+## xz
+"xz [options] file"
+English: Compresses files using the xz algorithm (Important switches: -k = keep original file, -d = decompress)
+Finglish: File-ha ra ba algorithm-e xz feshorde mikonad (Important switches: -k = hefz file asli, -d = decompression)
+
+## unxz
+"unxz [options] file.xz"
+English: Decompresses xz-compressed files (Important switches: -k = keep compressed file, -f = force decompression)
+Finglish: File-haye xz shode ra az halat-e feshorde kharej mikonad (Important switches: -k = hefz file feshorde, -f = force decompression)
+
+## tar
+"tar [options] archive file(s)"
+English: Creates, extracts, and manages archive files (Important switches: -c = create archive, -x = extract archive, -f = archive file, -z = use gzip, -j = use bzip2, -v = verbose, -r = append files)
+Finglish: Archive misazad, extract mikonad va archive-ha ra modiriyat mikonad (Important switches: -c = sakht archive, -x = extract archive, -f = file archive, -z = estefade az gzip, -j = estefade az bzip2, -v = namayesh jozeyat, -r = ezafe kardan file)
