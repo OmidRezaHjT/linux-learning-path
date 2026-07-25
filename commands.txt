@@ -524,9 +524,31 @@ Finglish: File-ha ra ba algorithm-e xz feshorde mikonad (Important switches: -k 
 ## unxz
 "unxz [options] file.xz"
 English: Decompresses xz-compressed files (Important switches: -k = keep compressed file, -f = force decompression)
-Finglish: File-haye xz shode ra az halat-e feshorde kharej mikonad (Important switches: -k = hefz file feshorde, -f = force decompression)
+Finglish: File-haye xz shode ra az halat-e feshorde kharej mikonad (Important switches: -k = hefz file feshorde, -f = force decozmpression)
 
 ## tar
 "tar [options] archive file(s)"
 English: Creates, extracts, and manages archive files (Important switches: -c = create archive, -x = extract archive, -f = archive file, -z = use gzip, -j = use bzip2, -v = verbose, -r = append files)
 Finglish: Archive misazad, extract mikonad va archive-ha ra modiriyat mikonad (Important switches: -c = sakht archive, -x = extract archive, -f = file archive, -z = estefade az gzip, -j = estefade az bzip2, -v = namayesh jozeyat, -r = ezafe kardan file)
+
+## Redirection Operators
+">, >>, <, 2>, 2>>, &>, &>>, <>"
+English: Redirects standard input, standard output, and standard error between commands and files.
+Finglish: STDIN, STDOUT va STDERR ra beyn command-ha va file-ha redirect mikonad.
+
+## Pipe
+"|"
+English: Passes the standard output of one command as the standard input of another command.
+Finglish: STDOUT yek command ra be onvan-e STDIN command-e ba'adi ersal mikonad.
+
+## xargs
+"xargs [options] [command]"
+English: Reads input from standard input and passes it as arguments to another command. (Important switches: -I = replace placeholder, -L = process one line at a time, -n = specify number of arguments per command)
+Finglish: Voroodi ra az STDIN migirad va be onvan-e argument be command-e digar midahad. (Important switches: -I = jaygozini placeholder, -L = pardazesh har khat, -n = tedad argument dar har ejra)
+
+## tee
+"tee [options] [file]"
+English: *Sends command output to both the terminal and one or more files. (Important switches: -a = append instead of overwrite)
+Finglish: Khorooji command ra ham dar terminal namayesh midahad va ham dar yek ya chand file zakhire mikonad. (Important switches: -a = append be jaye overwrite)
+
+
