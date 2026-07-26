@@ -551,4 +551,89 @@ Finglish: Voroodi ra az STDIN migirad va be onvan-e argument be command-e digar 
 English: *Sends command output to both the terminal and one or more files. (Important switches: -a = append instead of overwrite)
 Finglish: Khorooji command ra ham dar terminal namayesh midahad va ham dar yek ya chand file zakhire mikonad. (Important switches: -a = append be jaye overwrite)
 
+## bg
+"bg [%job]"
+English: Resumes a suspended job in the background.
+Finglish: Yek job motevaqef shode ra dar background edame midahad.
 
+## fg
+"fg [%job]"
+English: Brings a background or suspended job to the foreground.
+Finglish: Yek job dar background ya suspend shode ra be foreground miavarad.
+
+## jobs
+"jobs"
+English: Lists active jobs in the current shell session.
+Finglish: Job-haye fa'al dar shell-e feli ra namayesh midahad.
+
+## nohup
+"nohup command &"
+English: Keeps a command running after logout or terminal closure.
+Finglish: Ba'd az bastan terminal ya logout ham command ra dar hal ejra negah midarad.
+
+## ps
+"ps
+ps aux
+ps -ef"
+English: Displays information about running processes.
+Finglish: Ettela'at-e process-haye dar hal ejra ra namayesh midahad.
+
+## top
+"top"
+English: Displays real-time system and process information.
+Finglish: Ettela'at-e zende az process-ha va vaziyat system ra namayesh midahad.
+
+## free
+"free -h"
+English: Displays system memory and swap usage.
+Finglish: Meghdar RAM va Swap-e system ra namayesh midahad.
+
+## uptime
+"uptime"
+English: Shows system uptime, logged-in users, and load average.
+Finglish: Moddat-e roshan budan system, tedad user-ha va load average ra namayesh midahad.
+
+## watch
+"watch command"
+English: Runs a command repeatedly and refreshes its output at intervals.
+Finglish: Yek command ra be soorat dorei ejra va khoruji an ra be-rooz mikonad.
+
+## kill
+"kill PID
+kill -9 PID"
+English: Sends a signal to terminate or control a process.
+Finglish: Signal-i baraye payan dadan ya control kardan-e process ersal mikonad.
+
+## killall
+"killall process_name"
+English: Terminates all processes with the specified name.
+Finglish: Tamam process-ha ba esm-e moshakhas ra motevaqef mikonad.
+
+## pgrep
+"pgrep pattern"
+English: Searches for process IDs matching a name or pattern.
+Finglish: PID process-ha ra bar asas esm ya pattern peyda mikonad.
+
+## pkill
+"pkill pattern"
+English: Terminates processes matching a name or pattern.
+Finglish: Process-hayi ke ba pattern motabeqat darand ra motevaqef mikonad.
+
+## watch
+"watch [options] command"
+English: Runs a command repeatedly at specified intervals and displays the updated output.
+Finglish: Ye command ra dar bazeh-haye zamani moshakhas tekrar ejra mikonad va khoruji-ye be-rooz shode ra namayesh midahad.
+
+## screen
+"screen
+screen -ls
+screen -r"
+English: Creates persistent terminal sessions that can be detached and reattached.
+Finglish: Session-haye terminal-e paidar eijad mikonad ke mitavan az anha detach va dobare attach shod.
+
+## tmux
+"tmux
+tmux ls
+tmux attach"
+English: A terminal multiplexer for managing multiple persistent terminal sessions.
+Finglish: Yek terminal multiplexer baraye modiriyat chand session-e paidar ast.
