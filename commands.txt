@@ -637,3 +637,13 @@ tmux ls
 tmux attach"
 English: A terminal multiplexer for managing multiple persistent terminal sessions.
 Finglish: Yek terminal multiplexer baraye modiriyat chand session-e paidar ast.
+
+## nice
+"nice [-n value] [command]"
+English: Runs a command with a specified CPU scheduling priority (niceness).
+Finglish: Yek command ra ba priority (niceness) moshakhas ejra mikonad.
+
+## renice
+"renice [-n value] -p [PID]"
+English: Changes the priority (niceness) of a running process.
+Finglish: Priority (niceness) yek process dar hale ejra ra taghir midahad.
