@@ -647,3 +647,8 @@ Finglish: Yek command ra ba priority (niceness) moshakhas ejra mikonad.
 "renice [-n value] -p [PID]"
 English: Changes the priority (niceness) of a running process.
 Finglish: Priority (niceness) yek process dar hale ejra ra taghir midahad.
+
+## uname
+"uname [option]"
+English: Displays system information, such as the kernel name, version, and machine architecture.(Important switch : -a = show everything)
+Finglish: Ettela'at-e system mesle esm-e kernel, version va me'mari-ye system ra namayesh midahad.(switch mohem : -a = hame chiz ro neshon mide)
