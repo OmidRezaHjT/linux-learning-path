@@ -652,3 +652,8 @@ Finglish: Priority (niceness) yek process dar hale ejra ra taghir midahad.
 "uname [option]"
 English: Displays system information, such as the kernel name, version, and machine architecture.(Important switch : -a = show everything)
 Finglish: Ettela'at-e system mesle esm-e kernel, version va me'mari-ye system ra namayesh midahad.(switch mohem : -a = hame chiz ro neshon mide)
+
+## grep
+"grep [pattern] [file]"
+English: Searches text using regular expressions.(Important switches: -c = just show the count,-v = reverse the search,-n = show line numbers,-l = show only file names,-i = case insensitive,-r = Read all files under each directory, recursively)
+Finglish: Matn ra ba estefade az regex jostejoo mikonad.(Switch haye mohem : -c = faghat tedad ro neshon mide ,-v = bar ax search mikone,-n = tedad line neshon mide,-l = faghat esm file neshon mide ,-i = case insensitive,-r = Read all files under each directory, recursively )
