@@ -1,0 +1,65 @@
+## vi
+"vi [file]"
+English: **Opens and edits a text file using the vi editor.**
+Finglish: **Yek file matni ra ba editor-e vi baz va virayesh mikonad.**
+
+## vim
+"vim [file]"
+English: **Opens and edits a text file using the Vim editor (Vi Improved).**
+Finglish: **Yek file matni ra ba editor-e Vim (Vi ertegha yafte) baz va virayesh mikonad.**
+	## Command Mode
+	English: **Used for navigation, editing, searching, copying, deleting and running commands.**
+
+	## Insert Mode
+	English: **Used for inserting and editing text. Press `i` to enter and `Esc` to return to Command Mode.**
+
+	## Navigation
+	h  → Left
+	j  → Down
+	k  → Up
+	l  → Right
+	w  → Next word
+	e  → End of word
+	b  → Previous word
+	Ctrl+f → Next page
+	Ctrl+b → Previous page
+	G  → Last line (or nG)
+	H  → Top of screen
+	L  → Bottom of screen
+
+	## Editing
+	i   → Insert before cursor
+	a   → Insert after cursor
+	o   → New line below
+	O   → New line above
+	r   → Replace one character
+	c   → Change text
+	cw  → Change word
+	d   → Delete
+	dw  → Delete word
+	dd  → Delete line
+	x   → Delete character
+	p   → Paste after cursor
+	P   → Paste before cursor
+	xp  → Swap two characters
+
+	## Search
+	/ → Search forward
+	? → Search backward
+	n → Repeat previous search
+
+	## Save & Exit
+	:w     → Save
+	:w!    → Force save
+	:q     → Quit
+	:q!    → Quit without saving
+	:wq    → Save and quit
+	ZZ     → Save and quit
+	:e!    → Reload file
+	:!cmd  → Run shell command
+
+## nano
+"nano [file]"
+English: **Opens and edits a text file using the Nano editor.**
+Finglish: **Yek file matni ra ba editor-e Nano baz va virayesh mikonad.**
+
