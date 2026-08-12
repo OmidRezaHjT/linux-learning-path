@@ -657,3 +657,17 @@ Finglish: Ettela'at-e system mesle esm-e kernel, version va me'mari-ye system ra
 "grep [pattern] [file]"
 English: Searches text using regular expressions.(Important switches: -c = just show the count,-v = reverse the search,-n = show line numbers,-l = show only file names,-i = case insensitive,-r = Read all files under each directory, recursively)
 Finglish: Matn ra ba estefade az regex jostejoo mikonad.(Switch haye mohem : -c = faghat tedad ro neshon mide ,-v = bar ax search mikone,-n = tedad line neshon mide,-l = faghat esm file neshon mide ,-i = case insensitive,-r = Read all files under each directory, recursively )
+
+## FDISK (BIOS)
+"fdisk -l [device]"
+English: Lists the partition table of a disk, showing MBR/GPT layout, size, and type of each partition.
+Finglish: Jadval-e partition-haye disk ro neshun mide, shamel layout MBR ya GPT, size va type har partition.
+"fdisk [device]"
+English: Opens interactive mode to create, delete, or modify partitions on a disk.(Important commands inside: n = new partition, d = delete partition, p = print table, t = change partition type, w = write and exit, q = quit without saving)
+Finglish: Mode interactive ro baz mikone baraye sakht, delete ya taghir-e partition-ha.(Command-haye mohem daroonesh: n = partition jadid, d = delete partition, p = neshun dadan jadval, t = avaz kardan noe partition, w = save va khorooj, q = khorooj bedoone save)
+
+## GDISK (UEFI)
+"gdisk [device]"
+English: Same as fdisk but works with GPT partition tables, used on UEFI systems.(Important commands inside: n = new partition, d = delete partition, p = print table, t = change partition type, w = write and exit, q = quit without saving) 
+Finglish: Mesle fdisk-e vali baraye jadval-haye GPT, baraye system-haye UEFI estefade mishe.(Command-haye mohem daroonesh: n = partition jadid, d = delete partition, p = neshun dadan jadval, t = avaz kardan noe partition, w = save va khorooj, q = khorooj bedoone save)
+
