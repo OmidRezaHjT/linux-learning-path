@@ -671,3 +671,31 @@ Finglish: Mode interactive ro baz mikone baraye sakht, delete ya taghir-e partit
 English: Same as fdisk but works with GPT partition tables, used on UEFI systems.(Important commands inside: n = new partition, d = delete partition, p = print table, t = change partition type, w = write and exit, q = quit without saving) 
 Finglish: Mesle fdisk-e vali baraye jadval-haye GPT, baraye system-haye UEFI estefade mishe.(Command-haye mohem daroonesh: n = partition jadid, d = delete partition, p = neshun dadan jadval, t = avaz kardan noe partition, w = save va khorooj, q = khorooj bedoone save)
 
+## MKFS
+"mkfs -t [filesystem-type] [partition]"
+English: Formats a partition with the specified filesystem type.(Common types: ext2, ext3, ext4, xfs, vfat, exfat, btrfs)
+Finglish: Partition ro ba noe filesystem-e moshakhas format mikone.(Noe-haye rayej: ext2, ext3, ext4, xfs, vfat, exfat, btrfs)
+"mkfs.[filesystem-type] [partition]"
+English: Alternative syntax: calls the specific mkfs helper for that filesystem directly (e.g. mkfs.ext4, mkfs.exfat).
+Finglish: Syntax-e jaygozin: mostaghiman helper-e mkfs-e oon filesystem ro seda mizane (masalan mkfs.ext4, mkfs.exfat).
+
+## MKSWAP
+"mkswap [partition]"
+English: Initializes a partition as swap space so it can be used as extra virtual memory.
+Finglish: Ye partition ro be onvan-e swap amade mikone ta be onvan-e RAM-e ezafi estefade beshe.
+
+## SWAPON
+"swapon [partition]"
+English: Activates a swap partition so the kernel starts using it immediately.(Important switch: -a = activate all swaps listed in fstab)
+Finglish: Swap partition ro faal mikone ta kernel bela-fasele azash estefade kone.(Switch-e mohem: -a = faal kardan hame swap-haye too fstab)
+
+## BLKID
+"blkid [partition]"
+English: Shows the UUID and filesystem type of a partition, used for reliable mounting instead of device names.
+Finglish: UUID va noe filesystem-e partition ro neshun mide, baraye mount kardan-e motmaen be jaye esm-e device.
+
+
+## LSBLK
+"lsblk"
+English: Lists all block devices (disks and partitions) in a tree view.(Important switches: -f = show filesystem type and UUID, -a = show empty devices too)
+Finglish: Hame block device-ha (disk-ha va partition-ha) ro be soorat-e tree neshun mide.(Switch-haye mohem: -f = neshun dadan noe filesystem va UUID, -a = neshun dadan device-haye khali ham)

@@ -59,3 +59,23 @@ Finglish: **Linux mitavanad barname-ha ra ba estefade az dynamic linker (ld ya l
 ## Container
 English: An isolated user-space environment that shares the host operating system kernel.
 Finglish: Mohit-e joda shode-ei ke kernel-e host ra ba sayere container-ha moshtarak estefade mikonad.
+
+## Filesystem
+English: Linux supports several filesystem types, each built for a different purpose:
+    ext2 — no journaling, mostly replaced by ext3/ext4
+    ext3 — ext2 + journaling (max file 2TB, max fs 16TB)
+    ext4 — current standard (max file 16TB, max fs 1EB)
+    XFS — journaling, caches to RAM, great with UPS (max size 8EB)
+    swap — acts as extra RAM on disk when physical RAM runs out
+    VFAT (FAT32) — no journaling, good for Windows exchange, no permissions/symlinks
+    exFAT — newer FAT, mainly for USB/external drives, cross-OS compatible
+    btrfs — high-performance (max size 16EB), built-in RAID, LVM, snapshots, fault tolerance, live compression
+Finglish: Linux az chandin noe filesystem support mikone, har kodoom baraye hadaf-e khodesh sakhte shode:
+    ext2 — journaling nadare, bishtar ba ext3/ext4 jaygozin shode
+    ext3 — ext2 + journaling (max file 2TB, max fs 16TB)
+    ext4 — estandard-e fe'li (max file 16TB, max fs 1EB)
+    XFS — journaling dare, cache tooye RAM mizane, baraye UPS aali-e (max size 8EB)
+    swap — vaghti RAM-e fiziki tamoom she, mesle RAM-e ezafi rooye disk amal mikone
+    VFAT (FAT32) — journaling nadare, baraye exchange ba Windows khube, permission/symlink support nemikone
+    exFAT — nasl-e jadid-e FAT, bishtar baraye USB/device-haye external, rooye hame OS kar mikone
+    btrfs — performance-e bala (max size 16EB), RAID, LVM, snapshot, fault tolerance, compression-e zende dakhelesh dare
