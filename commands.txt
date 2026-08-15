@@ -694,8 +694,68 @@ Finglish: Swap partition ro faal mikone ta kernel bela-fasele azash estefade kon
 English: Shows the UUID and filesystem type of a partition, used for reliable mounting instead of device names.
 Finglish: UUID va noe filesystem-e partition ro neshun mide, baraye mount kardan-e motmaen be jaye esm-e device.
 
-
 ## LSBLK
 "lsblk"
 English: Lists all block devices (disks and partitions) in a tree view.(Important switches: -f = show filesystem type and UUID, -a = show empty devices too)
-Finglish: Hame block device-ha (disk-ha va partition-ha) ro be soorat-e tree neshun mide.(Switch-haye mohem: -f = neshun dadan noe filesystem va UUID, -a = neshun dadan device-haye khali ham)
+Finglish: Hame block device-ha (disk-ha va partition-ha) ro be soorat-e tree neshun mide.(Switch-haye mohem: -f = neshun dadan noe filesystem va UUID, -a = neshun dadan device-haye khali ham) 
+
+## DF
+"df [device]"
+English: Shows free and used space on mounted filesystems.(Important switches: -T = show filesystem type, -H = human readable in powers of 1000, -h = human readable in powers of 1024, -i = show inodes instead of blocks)
+Finglish: Faza-ye azad va estefade shode-ye filesystem-haye mount shode ro neshun mide.(Switch-haye mohem: -T = neshun dadan noe filesystem, -H = khonandani ba paye 1000, -h = khonandani ba paye 1024, -i = neshun dadan inode be jaye block)
+
+## DU
+"du [directory]"
+English: Shows disk usage of files and directories.(Important switches: -h = human readable powers of 1024, -H = human readable powers of 1000, -c = show grand total, -s = summary only, --max-depth N = limit directory depth shown)
+Finglish: Mizan-e estefade-ye disk tavasote file va directory-ha ro neshun mide.(Switch-haye mohem: -h = khonandani paye 1024, -H = khonandani paye 1000, -c = neshun dadan majmoo, -s = faghat kholase, --max-depth N = mahdood kardan omgh-e directory)
+
+## FSCK
+"fsck [device]"
+English: Checks and repairs filesystem errors, mainly used on unmounted partitions.(Important switches: -A = check all filesystems in fstab, -N = show what would run without doing it, -n = don't fix anything just report, -y = automatically answer yes to all fixes)
+Finglish: Filesystem ro check va repair mikone, bishtar rooye partition-haye unmount estefade mishe.(Switch-haye mohem: -A = check kardan hame filesystem-haye too fstab, -N = neshun dadan chi ejra mishe bedoone ejra-ye vaghei, -n = hichi fix nakon faghat gozaresh bede, -y = khodkar be hame soalat javab "y" bede)
+
+## E2FSCK
+"e2fsck [device]"
+English: Checks and repairs ext2/ext3/ext4 filesystems specifically. For journaling filesystems it usually just replays the journal.(Important switches: -n = don't fix, just check, -y = fix automatically, -f = force check even if filesystem seems clean)
+Finglish: Moshakhasan filesystem-haye ext2/ext3/ext4 ro check va repair mikone. Baraye filesystem-haye journaling maamoolan faghat journal ro replay mikone.(Switch-haye mohem: -n = fix nakon faghat check kon, -y = khodkar fix kon, -f = check ejbari hata age filesystem clean be nazar berese)
+
+## MKE2FS
+"mke2fs [device]"
+English: Creates an ext2/ext3/ext4 filesystem on a device. Running it as mkfs.ext3 adds journaling automatically.(Important switch: -n = show what would be done, like superblock locations, without actually creating the filesystem)
+Finglish: Ye filesystem-e ext2/ext3/ext4 rooye device misaze. Age be esm-e mkfs.ext3 seda beshe, journaling khodkar ezafe mishe.(Switch-e mohem: -n = neshun dadan chi anjam mishe, masalan mahal-e superblock-ha, bedoone in ke vaghean filesystem sakhte beshe)
+
+## TUNE2FS
+"tune2fs -l [device]"
+English: Shows or changes settings of an ext filesystem, such as label, journaling, mount count, and more.(Important switch: -l = list current filesystem parameters)
+Finglish: Tanzimat-e filesystem-e ext ro neshun mide ya taghir mide, mesle label, journaling, mount count va gheyre.(Switch-e mohem: -l = list kardan parameter-haye fe'li-e filesystem)
+
+## DEBUGFS
+debugfs [device]
+English: Interactive debugger for ext filesystems, opened read-only by default. Can inspect inodes, paths, and even undelete files.(Important switch: -w = open in read-write mode instead of read-only)
+Finglish: Debugger-e interactive baraye filesystem-haye ext, be soorat-e default read-only baz mishe. Mituneh inode, mesir-ha ro barresi kone va hata file-haye pak shode ro barsone.(Switch-e mohem: -w = baz kardan be soorat-e read-write be jaye read-only)
+
+## XFS TOOLS
+"xfs_info [mount-point]"
+English: Displays information about a mounted XFS filesystem.
+Finglish: Etela'at-e ye filesystem-e XFS-e mount shode ro neshun mide.
+
+"xfs_repair [device]"
+English: Repairs a damaged XFS filesystem. The filesystem must be unmounted first.(Important switch: -n = don't fix anything, just report problems)
+Finglish: Filesystem-e XFS-e aseeb dide ro repair mikone. Filesystem bayad ghablesh unmount beshe.(Switch-e mohem: -n = hichi fix nakon faghat moshkelat ro gozaresh bede)
+
+"xfs_growfs [mount-point]"
+English: Expands the size of a mounted XFS filesystem.
+Finglish: Andaze-ye ye filesystem-e XFS-e mount shode ro bozorg mikone.
+
+"xfs_admin [device]"
+English: Changes parameters of an XFS filesystem, such as label or UUID.
+Finglish: Parameter-haye filesystem-e XFS ro taghir mide, mesle label ya UUID.
+
+"xfs_db [device]"
+English: Examines and debugs an XFS filesystem at a low level, mainly used by experts or other xfs tools internally.
+Finglish: Filesystem-e XFS ro dar sath-e paeen barresi va debug mikone, bishtar tavasote motekhasesan ya khod-e abzar-haye xfs-e dige estefade mishe.
+
+"xfs_fsr [mount-point]"
+English: Reorganizes (defragments) files on an XFS filesystem, targeting the most fragmented files each pass.
+Finglish: File-haye ye filesystem-e XFS ro reorganize (defragment) mikone, har bar bishtarin file-haye fragmented ro hadaf migire.
+

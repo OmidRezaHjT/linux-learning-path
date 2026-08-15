@@ -79,3 +79,11 @@ Finglish: Linux az chandin noe filesystem support mikone, har kodoom baraye hada
     VFAT (FAT32) — journaling nadare, baraye exchange ba Windows khube, permission/symlink support nemikone
     exFAT — nasl-e jadid-e FAT, bishtar baraye USB/device-haye external, rooye hame OS kar mikone
     btrfs — performance-e bala (max size 16EB), RAID, LVM, snapshot, fault tolerance, compression-e zende dakhelesh dare
+
+## Inode & Superblock
+English: An inode stores all the metadata of a file or directory (owner, permissions, timestamps, and disk block locations), except its name. Directories are basically lists mapping names to inodes.
+    Inode — the "identity card" of a file, everything about it except its name
+    Superblock — stores metadata about the whole filesystem itself (size, block count, free blocks, feature flags) and is usually backed up in multiple locations on disk
+Finglish: Inode tamam-e metadata-ye ye file ya directory ro negah midare (owner, permission, timestamp-ha, va mahal-e block-haye disk), be joz esmesh. Directory-ha dar asl list-i az esm-ha be inode-ha hastan.
+    Inode — "karte shenasayi"-ye ye file, hame chiz darbaresh be joz esmesh
+    Superblock — metadata-ye kolle filesystem ro negah midare (size, tedad block, block-haye azad, feature-ha) va maamoolan tooye chandin mahal-e disk backup mishe
