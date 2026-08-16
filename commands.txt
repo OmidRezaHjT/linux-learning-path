@@ -759,3 +759,31 @@ Finglish: Filesystem-e XFS ro dar sath-e paeen barresi va debug mikone, bishtar 
 English: Reorganizes (defragments) files on an XFS filesystem, targeting the most fragmented files each pass.
 Finglish: File-haye ye filesystem-e XFS ro reorganize (defragment) mikone, har bar bishtarin file-haye fragmented ro hadaf migire.
 
+## MOUNT
+"mount [device] [mount-point]"
+English: Mounts a filesystem so its files become accessible under a directory in the tree.(Important switches: -t = specify filesystem type, -o = pass mount options like ro, rw, remount, loop)
+Finglish: Ye filesystem ro mount mikone ta file-hash az zire ye directory tooye tree in dastres bashan.(Switch-haye mohem: -t = moshakhas kardan noe filesystem, -o = dadan option-haye mount masalan ro, rw, remount, loop)
+
+"mount"
+English: Running with no parameters shows all currently mounted devices.
+Finglish: Bedoone parameter ejra beshe, hame device-haye fe'lan mount shode ro neshun mide.
+
+"mount UUID=[uuid] [mount-point]"
+English: Mounts a filesystem using its UUID instead of the device name, useful because device names can change.
+Finglish: Filesystem ro ba UUID-esh mount mikone be jaye esm-e device, mofide chon esm-e device-ha mumkene avaz beshan.
+
+## UMOUNT
+"umount [device-or-mount-point]"
+English: Unmounts a filesystem, either by device name or by its mount point — both work the same.
+Finglish: Filesystem ro unmount mikone, ya ba esm-e device ya ba mount point-esh — har dotashun mesle ham amal mikonan.
+
+## BLKID
+"blkid [device]"
+English: Shows the UUID, label, and filesystem type of a partition.(No arguments = lists info for all block devices)
+Finglish: UUID, label va noe filesystem-e ye partition ro neshun mide.(Bedoone argument = etela'at-e hame block device-ha ro list mikone)
+
+## LSBLK
+"lsblk -o +UUID"
+English: Lists block devices in a tree view, with an extra UUID column.(Important switches: -O = show all available columns, -o = choose specific columns to display)
+Finglish: Block device-ha ro be soorat-e tree list mikone, ba ye sotoon-e ezafi baraye UUID.(Switch-haye mohem: -O = neshun dadan hame sotoon-haye mojud, -o = entekhab-e sotoon-haye khas baraye namayesh)
+

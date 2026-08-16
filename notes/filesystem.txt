@@ -87,3 +87,30 @@ English: An inode stores all the metadata of a file or directory (owner, permiss
 Finglish: Inode tamam-e metadata-ye ye file ya directory ro negah midare (owner, permission, timestamp-ha, va mahal-e block-haye disk), be joz esmesh. Directory-ha dar asl list-i az esm-ha be inode-ha hastan.
     Inode — "karte shenasayi"-ye ye file, hame chiz darbaresh be joz esmesh
     Superblock — metadata-ye kolle filesystem ro negah midare (size, tedad block, block-haye azad, feature-ha) va maamoolan tooye chandin mahal-e disk backup mishe
+
+## FSTAB
+English: The /etc/fstab file controls which filesystems are automatically mounted at boot. Each line has 6 fields:
+    file system — label, UUID, or device path
+    mount point — where it's mounted (or swap/none for swap)
+    type — filesystem type like ext4, xfs, nfs
+    options — defaults, rw/ro, noauto, user, exec/noexec, noatime, umask
+    dump — whether the dump backup utility should back it up (usually 0)
+    pass — order of fsck checking at boot (0 = don't check)
+Note: user-mounted filesystems default to noexec unless exec is specified after user. noatime disables access-time recording, which can improve performance. After editing fstab, run systemctl daemon-reload to update the systemd units generated from it.
+Finglish: File-e /etc/fstab moshakhas mikone che filesystem-hayi khodkar tooye boot mount mishan. Har khat 6 ta field dare:
+    file system — label, UUID, ya mesir-e device
+    mount point — koja mount mishe (ya swap/none baraye swap)
+    type — noe filesystem masalan ext4, xfs, nfs
+    options — defaults, rw/ro, noauto, user, exec/noexec, noatime, umask
+    dump — ke aya dump utility backuresh begire (maamoolan 0)
+    pass — tartib-e check-e fsck moghe boot (0 = check nashe)
+Note: filesystem-haye user-mounted be soorat-e default noexec hastan, magar in ke exec ba'ad az user gofte beshe. noatime sabt-e access-time ro ghat mikone ke mituneh performance ro behtar kone. Ba'ad az edit-e fstab, systemctl daemon-reload ro bezan ta unit-haye systemd-e sakhte shode az roosh update beshan.
+
+## UUID & Labels
+English: Classical device names like /dev/sdb can change when devices are removed/reconnected, so it's more reliable to identify partitions by their UUID (Universal Unique Identifier) or label. Both mount and fstab can use UUID=... or LABEL=... instead of a device path.
+Finglish: Esm-haye classic-e device mesle /dev/sdb mumkene ba disconnect/reconnect avaz beshan, pas motmaentare partition-ha ro ba UUID (Universal Unique Identifier) ya label-eshun beshnasi. Ham mount va ham fstab mitunan be jaye mesir-e device, az UUID=... ya LABEL=... estefade konan.
+
+## Systemd Mount Units
+English: When using systemd, a unit configuration file ending in ".mount" describes a filesystem mount point that systemd controls and supervises — an alternative to fstab entries.
+Finglish: Vaghti az systemd estefade mishe, ye unit configuration file ke be ".mount" khatm mishe, ye mount point ro tosif mikone ke systemd control va supervise-esh mikone — jaygozin-i baraye entry-haye fstab.
+
