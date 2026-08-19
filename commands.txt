@@ -842,4 +842,17 @@ English: Sets a new umask value, either as an octal number (e.g. 0002) or symbol
 Finglish: Ye meghdar-e jadid baraye umask tanzim mikone, ya be soorat-e octal (masalan 0002) ya symbolic (masalan u=rw,g=,o=). Meghdar-e octal az default-e 666 (baraye file) ya 777 (baraye directory) kam mishe ta permission-e nahayi be dast biad. Masalan: umask 0002 → 666-002=664 (rw-rw-r--), yani write access az others gerefte mishe.
  
 
+## LN
+"ln [target] [link-name]"
+English: Creates a hard link — a new directory entry pointing to the same inode as the original file. Only works for files, not directories, and can't cross filesystems.
+Finglish: Ye hard link misaze — ye directory entry-e jadid ke be hamun inode-e file-e asli eshare mikone. Faghat baraye file kar mikone na directory, va nemituneh az filesystem-e dige obur kone.
+
+"ln -s [target] [link-name]"
+English: Creates a symbolic (soft) link — a directory entry that points to the target by name, not by inode.(Important switch: -s = make it symbolic instead of hard. Can cross filesystems and can link directories too, but breaks if the target is moved or deleted)
+Finglish: Ye symbolic (soft) link misaze — ye directory entry ke be esm-e target eshare mikone, na be inode-esh.(Switch-e mohem: -s = symbolic besazeh be jaye hard. Mituneh az filesystem obur kone va directory ro ham link kone, vali age target jabeja ya pak beshe, link kharab mishe)
+
+## UNLINK
+"unlink [file]"
+English: Removes a single file or link. Simpler than rm — takes exactly one argument and no options.
+Finglish: Ye file ya link ro pak mikone. Sadeh-tar az rm-e — daghighan ye argument migire va option nadare.
 

@@ -114,3 +114,12 @@ Finglish: Esm-haye classic-e device mesle /dev/sdb mumkene ba disconnect/reconne
 English: When using systemd, a unit configuration file ending in ".mount" describes a filesystem mount point that systemd controls and supervises — an alternative to fstab entries.
 Finglish: Vaghti az systemd estefade mishe, ye unit configuration file ke be ".mount" khatm mishe, ye mount point ro tosif mikone ke systemd control va supervise-esh mikone — jaygozin-i baraye entry-haye fstab.
 
+## Hard Links vs Symbolic Links
+English: A link is an extra directory entry pointing to a file, letting one file have multiple names.
+	Hard link — points directly to the same inode as the original. Both names are equal; deleting one doesn't affect the other, since the data stays until every hard link is removed. Can't cross filesystems or link directories.
+	Soft (symbolic) link — points to the target by name, not by inode. Shows as l in ls -l. Can cross filesystems and link directories, but breaks (dangling link) if the target is moved, renamed, or deleted.
+	Use ls -i to see a file's inode number — hard-linked files share the same inode number, symlinks don't.
+Finglish: Link ye directory entry-e ezafi ke be ye file eshare mikone, ta ye file betuneh chandin esm dashte bashe.
+	Hard link — mostaghiman be hamun inode-e file-e asli eshare mikone. Har do esm barabaran; pak kardan-e yeki rooye oon yeki asar nadare, chon data ta vaghti ke hame-ye hard link-ha pak nashan mimune. Nemituneh az filesystem obur kone ya directory link kone.
+	Soft (symbolic) link — be esm-e target eshare mikone, na inode-esh. Tooye ls -l be soorat-e l neshun dade mishe. Mituneh az filesystem obur kone va directory ham link kone, vali age target jabeja, esm-avaz ya pak beshe, link kharab mishe (dangling link).
+	Ba ls -i mituni shomare-ye inode-e file ro bebini — file-haye hard-linked shomare-ye inode-e moshtarek daran, symlink-ha na.
