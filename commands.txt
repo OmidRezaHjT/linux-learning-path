@@ -787,3 +787,59 @@ Finglish: UUID, label va noe filesystem-e ye partition ro neshun mide.(Bedoone a
 English: Lists block devices in a tree view, with an extra UUID column.(Important switches: -O = show all available columns, -o = choose specific columns to display)
 Finglish: Block device-ha ro be soorat-e tree list mikone, ba ye sotoon-e ezafi baraye UUID.(Switch-haye mohem: -O = neshun dadan hame sotoon-haye mojud, -o = entekhab-e sotoon-haye khas baraye namayesh)
 
+## WHOAMI
+"whoami"
+English: Shows the username you're currently logged in as.
+Finglish: Username-i ke ba oon login hasti ro neshun mide.
+
+## GROUPS
+"groups"
+English: Lists all groups the current user belongs to.
+Finglish: Hame group-hayi ke user-e fe'li ozvesheone list mikone.
+
+## ID
+"id"
+English: Shows UID, GID, and all group memberships of a user.(No argument = current user, or pass a username to check another user)
+Finglish: UID, GID va hame group-haye ozviat-e ye user ro neshun mide.(Bedoone argument = user-e fe'li, ya ye username bede ta user-e dige ro check koni)
+
+## SU
+"su [username]"
+English: Switches to another user's session, asking for that user's password.(No argument = switch to root)
+Finglish: Session ro be user-e dige avaz mikone, password-e oon user ro mikhad.(Bedoone argument = raftan be root)
+
+## CHMOD
+"chmod [mode] [file]"
+English: Changes read/write/execute permissions on a file or directory.(Mode can be octal like 755, or symbolic like u+x, g-w, o=r. Octal values: read=4, write=2, execute=1 — sum them per category. Important switch: -R = apply recursively to all files inside a directory)
+Finglish: Permission-haye khandan/neveshtan/ejra ro rooye ye file ya directory taghir mide.(Mode mituneh octal bashe mesle 755, ya symbolic mesle u+x, g-w, o=r. Meghdar-haye octal: read=4, write=2, execute=1 — baraye har daste ba ham jam beshan. Switch-e mohem: -R = be soorat-e recursive rooye hame file-haye tooye directory ejra beshe)
+
+## CHOWN
+"chown [user]:[group] [file]"
+English: Changes the owner and/or group of a file or directory.(Important switch: -R = apply recursively)
+Finglish: Owner va/ya group-e ye file ya directory ro taghir mide.(Switch-e mohem: -R = be soorat-e recursive ejra beshe)
+
+## CHGRP
+"chgrp [group] [file]"
+English: Changes only the group of a file or directory, without touching the owner.(Important switch: -R = apply recursively)
+Finglish: Faghat group-e ye file ya directory ro taghir mide, be owner kari nadare.(Switch-e mohem: -R = be soorat-e recursive ejra beshe)
+
+## USERMOD
+"usermod -aG [group] [username]"
+English: Adds a user to an additional group without removing them from their existing groups.(Important switches: -a = append, must be used together with -G to avoid removing other groups, -G = specify the group(s))
+Finglish: Ye user ro be ye group-e ezafi ezafe mikone bedoone in ke az group-haye ghabliesh hazf beshe.(Switch-haye mohem: -a = append, hatman bayad ba -G biad ta group-haye dige hazf nashan, -G = moshakhas kardan group)
+
+## NEWGRP
+"newgrp [group]"
+English: Changes your default group for newly created files in the current session.
+Finglish: Group-e default-e file-haye jadid ro tooye session-e fe'li avaz mikone.
+
+## UMASK
+"umask"
+English: Shows the current umask value, which determines which permissions are removed from newly created files/directories.(No argument = show current value)
+Finglish: Meghdar-e fe'li-e umask ro neshun mide, ke moshakhas mikone che permission-hayi az file/directory-haye jadid hazf mishe.(Bedoone argument = neshun dadan meghdar-e fe'li)
+
+"umask [value]"
+English: Sets a new umask value, either as an octal number (e.g. 0002) or symbolic form (e.g. u=rw,g=,o=). The octal value is subtracted from the default 666 (files) or 777 (directories) to get the final permission. Example: umask 0002 → 666-002=664 (rw-rw-r--), removing write access for others.
+Finglish: Ye meghdar-e jadid baraye umask tanzim mikone, ya be soorat-e octal (masalan 0002) ya symbolic (masalan u=rw,g=,o=). Meghdar-e octal az default-e 666 (baraye file) ya 777 (baraye directory) kam mishe ta permission-e nahayi be dast biad. Masalan: umask 0002 → 666-002=664 (rw-rw-r--), yani write access az others gerefte mishe.
+ 
+
+
