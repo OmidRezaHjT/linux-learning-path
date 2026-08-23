@@ -856,3 +856,32 @@ Finglish: Ye symbolic (soft) link misaze — ye directory entry ke be esm-e targ
 English: Removes a single file or link. Simpler than rm — takes exactly one argument and no options.
 Finglish: Ye file ya link ro pak mikone. Sadeh-tar az rm-e — daghighan ye argument migire va option nadare.
 
+## WHICH
+"which [command]"
+English: Shows the path of the executable that would run for a given command, based on your PATH.(Important switch: -a = show all matches in PATH, not just the first one)
+Finglish: Mesir-e executable-i ke baraye ye command ejra mishe ro neshun mide, bar asas-e PATH.(Switch-e mohem: -a = neshun dadan hame match-ha too PATH, na faghat avali)
+
+## TYPE
+"type [command]"
+English: Shows what kind of command something is — a binary, a shell builtin, an alias, or a keyword. More general than which, since it also recognizes shell builtins.
+Finglish: Neshun mide ye command che noe-ie — binary, shell builtin, alias, ya keyword. Kolli-tar az which-e, chon shell builtin-ha ro ham mishnase.
+
+## WHEREIS
+"whereis [command]"
+English: Shows the binary, man page, and source code locations of a command — more detailed than which.
+Finglish: Mahal-e binary, man page va source code-e ye command ro neshun mide — jozeiat-tar az which.
+
+## FIND
+"find [path] [tests]"
+English: Searches for files under a path using various filters.(Common tests: -user/-group = filter by owner/group, -nouser/-nogroup = files with no valid owner/group, -maxdepth N = limit search depth, -iname = case-insensitive name match, -type = filter by type (f, d, l, ...), ! before a test negates it)
+Finglish: File-ha ro zire ye mesir, ba estefade az filter-haye moxtalef search mikone.(Test-haye rayej: -user/-group = filter bar asas-e owner/group, -nouser/-nogroup = file-haye bedoone owner/group-e mo'tabar, -maxdepth N = mahdood kardan omgh-e search, -iname = match-e esm bedoone hasasiat be case, -type = filter bar asas-e noe (f, d, l, ...), ! ghabl az ye test unra negate mikone)
+
+## LOCATE
+"locate [pattern]"
+English: Quickly searches for files by name using a prebuilt database instead of scanning the live filesystem — much faster than find, but data can be slightly outdated.
+Finglish: File-ha ro ba esm, sari' search mikone, ba estefade az ye database-e az ghabl sakhte shode be jaye scan-e zende-ye filesystem — kheili sari-tar az find-e, vali data mumkene kami ghadimi bashe.
+
+## UPDATEDB
+"updatedb"
+English: Rebuilds the database used by locate. Usually runs automatically via a daily cronjob, but can be run manually as root. Configured via /etc/updatedb.conf.
+Finglish: Database-i ke locate azash estefade mikone ro dobare misaze. Maamoolan khodkar ba ye cronjob-e roozane ejra mishe, vali mituneh dasti ham ba root ejra beshe. Tanzimatesh tooye /etc/updatedb.conf-e.
