@@ -885,3 +885,39 @@ Finglish: File-ha ro ba esm, sari' search mikone, ba estefade az ye database-e a
 "updatedb"
 English: Rebuilds the database used by locate. Usually runs automatically via a daily cronjob, but can be run manually as root. Configured via /etc/updatedb.conf.
 Finglish: Database-i ke locate azash estefade mikone ro dobare misaze. Maamoolan khodkar ba ye cronjob-e roozane ejra mishe, vali mituneh dasti ham ba root ejra beshe. Tanzimatesh tooye /etc/updatedb.conf-e.
+
+## ENV
+"env [OPTION]... [NAME=VALUE]... [COMMAND [ARGS]...]"
+English: Sets, removes, or displays environment variables, or runs a command in a modified environment.(Important switches: -u NAME (--unset=NAME) = remove a variable from the environment, -i (--ignore-environment) = start with a completely empty environment)
+Finglish: Environment variable-ha ro set, hazf, ya display mikone, ya ye command ro tooye ye environment-e taghir yafte ejra mikone.(Switch-haye mohem: -u NAME (--unset=NAME) = hazf kardan ye variable az environment, -i (--ignore-environment) = shoru' ba ye environment-e kaamelan khali)
+
+## SET
+"set [OPTION]"
+English: Changes shell option values or displays shell variables.(Common switches: -b = report background job status immediately, -e = exit if a command returns non-zero, -n = read commands without executing them, useful for syntax checking, -t = exit after one command, -C = prevent overwriting files with output redirection)
+Finglish: Meghdar-e option-haye shell ro taghir mide ya shell variable-ha ro neshun mide.(Switch-haye rayej: -b = gozaresh-e fori-e status-e background job-ha, -e = khorooj age ye command non-zero bargardune, -n = khundane command-ha bedoone ejra, baraye check-e syntax mofide, -t = khorooj ba'ad az ye command, -C = jelogiri az overwrite kardan-e file ba output redirection)
+
+## UNSET
+"unset [name]"
+English: Removes a variable or function definition.
+Finglish: Ye variable ya function ro hazf mikone.
+
+## EXPORT
+"export [name]=[value]"
+English: Sets a variable and makes it available to the current shell and all its sub-shells (child processes). Without export, a variable only exists in the current shell.
+Finglish: Ye variable set mikone va tooye shell-e fe'li va hame sub-shell-hash (child process-ha) dar dastres mizarash. Bedoone export, variable faghat tooye shell-e fe'li vojud dare.
+
+## SOURCE / .
+"source [file]"
+". [file]"
+English: Runs a script's commands in the current shell instead of a sub-shell, so any variables/functions it sets stay available afterward. The dot (.) is a shortcut for source.
+Finglish: Command-haye ye script ro tooye shell-e fe'li ejra mikone be jaye sub-shell, pas har variable/function-i ke set kone ba'adesh ham dar dastres mimune. Noghte (.) ye mokhafaf baraye source-e.
+
+## ALIAS
+"alias [name]='[command]'"
+English: Defines a shortcut name for a longer command or set of options. Persistent aliases are usually added to ~/.bashrc.
+Finglish: Ye esm-e mokhtasar baraye ye command-e tulani ya majmoo-ie az option ta'rif mikone. Alias-haye daemi maamoolan tooye ~/.bashrc ezafe mishan.
+
+## FUNCTION
+"funnyls () { ls -ltrh; echo "This is a funny ls"; }"
+English: Defines a bash function — a reusable block of commands, useful for repetitive tasks with slight variations.
+Finglish: Ye bash function ta'rif mikone — ye block-e ghabel-e estefade-ye mojadad az command-ha, baraye kar-haye tekrari ba tafavot-e kam mofide.

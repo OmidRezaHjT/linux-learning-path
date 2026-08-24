@@ -123,3 +123,19 @@ Finglish: Link ye directory entry-e ezafi ke be ye file eshare mikone, ta ye fil
 	Hard link — mostaghiman be hamun inode-e file-e asli eshare mikone. Har do esm barabaran; pak kardan-e yeki rooye oon yeki asar nadare, chon data ta vaghti ke hame-ye hard link-ha pak nashan mimune. Nemituneh az filesystem obur kone ya directory link kone.
 	Soft (symbolic) link — be esm-e target eshare mikone, na inode-esh. Tooye ls -l be soorat-e l neshun dade mishe. Mituneh az filesystem obur kone va directory ham link kone, vali age target jabeja, esm-avaz ya pak beshe, link kharab mishe (dangling link).
 	Ba ls -i mituni shomare-ye inode-e file ro bebini — file-haye hard-linked shomare-ye inode-e moshtarek daran, symlink-ha na.
+
+## Shell Types & Startup Files
+English: Bash starts in one of three modes, each loading a different set of config files:
+    Login shell (e.g. SSH login) — runs /etc/profile (which runs everything in /etc/profile.d/), then the first found of ~/.bash_profile, ~/.bash_login, or ~/.profile (only one runs), then finally ~/.bashrc.
+    Interactive non-login shell (e.g. opening a new terminal) — runs /etc/bash.bashrc (or /etc/bashrc) and ~/.bashrc.
+    Non-interactive shell (e.g. a sub-shell spawned to run a command) — no fixed file; checks the BASH_ENV variable, which is usually unset by default.
+Other relevant files:
+/etc/skel — template directory copied into every new user's home directory.
+~/.bash_logout — runs on logout from a login shell, often just clears the screen.
+Finglish: Bash be yeki az se hallat shoru' mishe, har kodoom ye set-e file-e config-e mokhtalef load mikone:
+    Login shell (masalan SSH login) — /etc/profile ejra mishe (ke hame chi tooye /etc/profile.d/ ro ham ejra mikone), ba'ad avvalin file-e peida shode az ~/.bash_profile, ~/.bash_login, ya ~/.profile (faghat yeki ejra mishe), va dar akhar ~/.bashrc.
+    Interactive non-login shell (masalan baz kardan-e terminal-e jadid) — /etc/bash.bashrc (ya /etc/bashrc) va ~/.bashrc ejra mishan.
+    Non-interactive shell (masalan sub-shell-i ke baraye ejra-ye ye command sakhte mishe) — file-e sabet nadare; variable-e BASH_ENV ro check mikone, ke maamoolan be soorat-e default unset-e.
+File-haye marboote-ye dige:
+/etc/skel — directory-e template-i ke tooye home directory-e har user-e jadid copy mishe.
+~/.bash_logout — moghe logout az login shell ejra mishe, aksaran faghat safheh ro pak mikone.
