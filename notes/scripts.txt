@@ -1,0 +1,94 @@
+## Combining & Chaining Commands
+English: Commands can be combined on one line:
+	; — runs commands sequentially, regardless of success/failure
+	&& — runs the next command only if the previous one succeeded (logical AND)
+	|| — runs the next command only if the previous one failed (logical OR)
+Example: cp backup.gzip /backups/ && rm backup.gzip deletes the local backup only if the copy succeeded.
+
+Finglish: Command-ha mituna ru ye khat ba ham combine beshan:
+	; — command-ha ro be tartib ejra mikone, farghi nemikone success ya fail beshan
+	&& — command-e ba'adi faghat vaghti ejra mishe ke ghabli success bashe (AND-e mantighi)
+	|| — command-e ba'adi faghat vaghti ejra mishe ke ghabli fail beshe (OR-e mantighi)
+Masal: cp backup.gzip /backups/ && rm backup.gzip faghat vaghti backup-e local ro pak mikone ke copy movafagh bude bashe.
+
+## Shebang
+English: The first line of a script, starting with #!, tells the shell which interpreter to run the script with — e.g. #!/bin/bash or #!/bin/sh. Don't confuse it with a regular # comment.
+Finglish: Khat-e avval-e ye script, ke ba #! shoru' mishe, be shell mige ba che interpreter-i script ro ejra kone — masalan #!/bin/bash ya #!/bin/sh. Ba comment-e adi-e # ashtebah nagir.
+
+## Script Variables & Arguments
+English: Variables are defined as VARNAME=VALUE (no spaces around =). Command-line arguments passed to a script are accessed as $1, $2, etc., and $# holds the number of arguments passed.
+Finglish: Variable-ha be soorat-e VARNAME=VALUE ta'rif mishan (bedoone space daur-e =). Argument-haye khat-e command ke be script pass mishan az tarigh-e $1, $2 va gheyre dar dastresan, va $# tedad-e argument-haye pass shode ro negah midare.
+
+## Command Substitution
+English: $(command) or `command` (backticks) runs a command and substitutes its output into the current line — useful for saving output into a variable or building filenames dynamically.
+Finglish: $(command) ya `command` (backtick) ye command ro ejra mikone va khoroojiesh ro tooye khat-e fe'li jaygozin mikone — mofide baraye zakhire-ye khorooji tooye ye variable ya sakht-e dynamic-e esm-e file.
+
+## Executing Scripts
+English: A script must have execute permission (chmod +x) to run directly. Since Linux doesn't search the current directory by default, run local scripts with ./script.sh. Alternatively, run it as an argument to the interpreter: sh script.sh or bash script.sh. Both methods run the script in a child process; exec instead replaces the current shell with it.
+Finglish: Ye script bayad execute permission dashte bashe (chmod +x) ta mostaghiman ejra beshe. Chon Linux be soorat-e default directory-e fe'li ro search nemikone, script-haye local ro ba ./script.sh ejra kon. Ya be onvan-e argument be interpreter bede: sh script.sh ya bash script.sh. Har do ravesh script ro tooye ye child process ejra mikonan; exec be jash shell-e fe'li ro ba oon jaygozin mikone.
+
+## if/then/else Conditions
+English: Basic syntax:
+if [condition]
+then
+    do something
+else
+    do something else
+fi
+
+The else part is optional. Use [ ] (or test) for the condition, with spaces around brackets and operators mattering.
+Common test operators:
+ "a" = "b" — strings equal
+ "a" != "b" — strings not equal
+ N -lt M — less than
+ N -gt M — greater than
+ N -ge M — greater or equal
+ N -le M — less or equal
+ N -ne M — not equal
+ -f FILE — file exists
+ -s FILE — file exists and is non-empty
+ -x FILE — file exists and is executable
+Finglish: Syntax-e paye:
+if [condition]
+then
+    kar-i anjam bede
+else
+    kar-e dige anjam bede
+fi
+
+Bakhsh-e else ekhtiari-e. Baraye condition az [ ] (ya test) estefade kon, space daur-e bracket-ha va operator-ha mohem-e.
+Operator-haye rayej-e test:
+ "a" = "b" — barabari-ye string
+ "a" != "b" — na-barabari-ye string
+ N -lt M — kamtar
+ N -gt M — bishtar
+ N -ge M — bishtar ya mosavi
+ N -le M — kamtar ya mosavi
+ N -ne M — na-mosavi
+ -f FILE — file vojud dare
+ -s FILE — file vojud dare va khaliyash nist
+ -x FILE — file vojud dare va executable-e
+
+## for & while Loops
+English: for loops iterate over a list; while loops repeat while a condition stays true.
+for VAR in list; do
+    something with $VAR
+done
+while [condition]; do
+    something
+done
+
+Use let VAR=VAR-1 (not plain VAR=$VAR-1) for arithmetic, otherwise bash treats it as string concatenation. An always-true condition creates an infinite loop (stop with Ctrl+C).
+Finglish: for rooye ye list tekrar mishe; while ta vaghti ye condition true-e edame mide.
+for VAR in list; do
+    kar-i ba $VAR
+done
+while [condition]; do
+    kar-i
+done
+
+Baraye mohasebat az let VAR=VAR-1 estefade kon (na sade VAR=$VAR-1), vagarna bash unra be onvan-e concatenation-e string mibine. Condition-e hamishe-true ye infinite loop misaze (ba Ctrl+C ghat kon).
+
+## Return Values ($?)
+English: Every command returns an exit status when it finishes — 0 means success, any non-zero value means failure (127 = command not found). Check it with $? right after the command runs. Inside a script, use exit N to set your own return value.
+Finglish: Har command vaghti tamoom mishe ye exit status bar migardune — 0 yani success, har adad-e gheyr-e sefr yani failure (127 = command peida nashod). Bela-fasele ba'ad az ejra-ye command, ba $? check-esh kon. Tooye script, ba exit N mituni return value-e khodet ro set koni.

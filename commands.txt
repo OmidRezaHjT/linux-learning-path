@@ -921,3 +921,30 @@ Finglish: Ye esm-e mokhtasar baraye ye command-e tulani ya majmoo-ie az option t
 "funnyls () { ls -ltrh; echo "This is a funny ls"; }"
 English: Defines a bash function — a reusable block of commands, useful for repetitive tasks with slight variations.
 Finglish: Ye bash function ta'rif mikone — ye block-e ghabel-e estefade-ye mojadad az command-ha, baraye kar-haye tekrari ba tafavot-e kam mofide.
+
+## SEQ
+"seq [start] [end]"
+English: Generates a sequence of numbers, commonly used to control loop iterations.(Shorthand alternative: {1..42} does the same thing without seq)
+Finglish: Ye seq az adad tolid mikone, bishtar baraye control-e tekrar-e loop estefade mishe.(Jaygozin-e mokhtasar: {1..42} hamun kar ro bedoone seq anjam mide)
+
+## EXEC
+"exec [command]"
+English: Replaces the current shell process with the given command instead of running it in a child process.(Important switch: -c = run the command in a clean/empty environment)
+Finglish: Process-e shell-e fe'li ro ba command-e dade shode jaygozin mikone, be jaye inke tooye ye child process ejrash kone.(Switch-e mohem: -c = ejra kardan command tooye ye environment-e paak/khali)
+
+## READ
+"read [variable]"
+English: Reads a line of user input into a variable.(Important switches: -t N = timeout after N seconds if no input, -p "text" = show a prompt before reading)
+Finglish: Ye khat az vorodi-ye user ro tooye ye variable mikhune.(Switch-haye mohem: -t N = timeout ba'ad az N sanie age input naya, -p "text" = neshun dadan ye prompt ghabl az khundan)
+
+## TEST
+"test [condition]"
+"[ condition ]"
+English: Evaluates a condition and returns success (0) or failure (1). The square-bracket form is a common shortcut for test.
+Finglish: Ye condition ro barresi mikone va success (0) ya failure (1) bar migardune. Shekl-e ba brackets ye mokhafaf-e rayej baraye test-e.
+
+## MAIL
+"mail [user]"
+"echo "[body]" | mail -s "[subject]" [user]"
+English: Sends an email to a local user, commonly used to notify root from a script.(Important switch: -s = specify the subject line. Requires mailutils to be installed)
+Finglish: Ye email be ye user-e local mifereste, bishtar baraye khabar dadan be root az tooye script estefade mishe.(Switch-e mohem: -s = moshakhas kardan khat-e subject. Niaz be nasb-e mailutils dare)
