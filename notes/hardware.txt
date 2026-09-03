@@ -72,3 +72,38 @@ Finglish: Mostaghim ruye hardware ejra mishe va be host OS niaz nadare.
 English: Runs as an application on a host operating system and manages guest virtual machines.
 Finglish: Ruye host OS be onvan yek barname ejra mishe va VM-ha ro modiriyat mikone.
 
+## X11 Architecture
+English: The Linux GUI stack has layers: hardware (monitor) → kernel/drivers → Display Server (X or Wayland) → window manager/desktop environment. X (X Window System / X11) is a network-transparent protocol describing how a client (application) and the display server exchange messages. X.Org is the free/open-source implementation of it.
+Finglish: Stack-e GUI-e Linux chandin layer dare: hardware (monitor) → kernel/driver-ha → Display Server (X ya Wayland) → window manager/desktop environment. X (X Window System / X11) ye protocol-e network-transparent-e ke tosif mikone chetori client (application) va display server ba ham message rad-o-badal mikonan. X.Org pi'ade-sazi-ye free/open-source-e in protocol-e.
+
+## /etc/X11/xorg.conf
+English: The traditional main config file for X. Modern X mostly auto-configures itself and doesn't need this file, but it can still be used to customize boot behavior. Generate one with Xorg -configure, then move it into place. It's divided into sections:
+    Files — font paths X needs
+    Module — extra modules to load (e.g. glx for 3D)
+    InputDevice — keyboard, mouse, touchpad definitions
+    Device — graphics card definition
+    Monitor / Screen — display specs, resolutions, color depths
+    ServerLayout — ties everything together (which screen + input devices are active)
+Finglish: File-e config-e asli-e sonati-e X. X-e modern bishtar khodesh ro auto-configure mikone va be in file niazi nist, vali hanuz mishe barash boot behavior ro customize kard. Ba Xorg -configure ye file besaz, ba'ad jaash bezar. Be chand section taghsim mishe:
+    Files — mesir-e font-hayi ke X niaz dare
+    Module — module-haye ezafi baraye load (masalan glx baraye 3D)
+    InputDevice — ta'rif-e keyboard, mouse, touchpad
+    Device — ta'rif-e graphics card
+    Monitor / Screen — moshakhasat-e display, resolution, color depth
+    ServerLayout — hame chiz ro be ham vasl mikone (che screen va input device-i faal-e)
+
+## /etc/X11/xorg.conf.d/
+English: Instead of editing the vendor's main xorg.conf directly (which risks being overwritten on updates, or blocking updates to preserve your edits), local customizations go into separate files under this directory. The main xorg.conf stays untouched.
+Finglish: Be jaye edit-e mostaghim-e xorg.conf-e asli-e vendor (ke risk-e overwrite shodan moghe update, ya jelogiri az update baraye hefz-e taghirat-e local ro dare), taghirat-e local tooye file-haye jodagane zir-e in directory gozashte mishan. xorg.conf-e asli dast-nakhorde mimune.
+
+## ~/.xsession-errors
+English: Log file where errors during X's startup or runtime are recorded — the first place to check when a GUI session fails.
+Finglish: File-e log-i ke error-haye moghe startup ya runtime-e X toosh sabt mishan — avvalin ja baraye check kardan vaghti session-e GUI fail mikone.
+
+## DISPLAY variable
+English: An environment variable telling graphical programs where to send their output. Default is :0 (the local display). Setting it to a remote server's address (e.g. export DISPLAY=192.168.42.80:0) sends the GUI output there instead — though most distros block remote X connections by default for security.
+Finglish: Ye environment variable ke be barname-haye graphical mige khoroojiashun ro koja beferestan. Default-esh :0-e (display-e local). Set kardanesh be address-e ye server-e remote (masalan export DISPLAY=192.168.42.80:0) khorooji-ye GUI ro be oonja mifereste — vali bishtar distro-ha be soorat-e default connection-haye remote-e X ro be dalil-e amniat mibandan.
+
+## Wayland
+English: A modern replacement for X11, built to fix X11's age and complexity. Wayland is more secure and simpler to maintain, and many distros now use it by default while keeping X11 as a fallback.
+Finglish: Ye jaygozin-e modern baraye X11, ke baraye fix kardan-e ghadimi budan va pichidegi-ye X11 sakhte shode. Wayland amniat-e bishtar va maintenance-e sadetari dare, va kheili az distro-ha alan be soorat-e default azash estefade mikonan va X11 ro be onvan-e fallback negah midaran.

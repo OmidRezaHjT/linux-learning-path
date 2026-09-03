@@ -948,3 +948,27 @@ Finglish: Ye condition ro barresi mikone va success (0) ya failure (1) bar migar
 "echo "[body]" | mail -s "[subject]" [user]"
 English: Sends an email to a local user, commonly used to notify root from a script.(Important switch: -s = specify the subject line. Requires mailutils to be installed)
 Finglish: Ye email be ye user-e local mifereste, bishtar baraye khabar dadan be root az tooye script estefade mishe.(Switch-e mohem: -s = moshakhas kardan khat-e subject. Niaz be nasb-e mailutils dare)
+
+## XHOST
+"xhost"
+English: Shows the current access control status of the X server — who's authorized to connect.
+Finglish: Status-e fe'li-e access control-e X server ro neshun mide — ke ejaze-ye connect dare.
+
+"xhost +"
+English: Disables access control, allowing clients to connect from any host.(Security risk — use with caution)
+Finglish: Access control ro ghair-e faal mikone, ejaze mide client az har host-i connect beshe.(Khatar-e amniati dare — ba ehtiyat estefade beshe)
+
+"xhost -"
+English: Re-enables access control, restricting connections to authorized clients only.
+Finglish: Access control ro dobare faal mikone, connection-ha ro faghat be client-haye mojaz mahdood mikone.
+
+"xhost +[ip-address]"
+English: Grants X server access to a specific remote IP address only.
+Finglish: Dastresi be X server ro faghat be ye IP-e remote-e khas mide.
+
+## XAUTH
+"xauth"
+English: Manages the authorization tokens used to control access to the X server, based on a shared secret stored in ~/.Xauthority.(Common fix: deleting the .Xauthority file and restarting X can resolve broken X sessions)
+Finglish: Token-haye authorization ro modiriyat mikone ke baraye control-e dastresi be X server estefade mishan, bar asas-e ye secret-e moshtarek tooye ~/.Xauthority.(Fix-e rayej: pak kardan-e file-e .Xauthority va restart-e X mituneh session-haye kharab-e X ro fix kone)
+
+
