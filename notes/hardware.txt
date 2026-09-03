@@ -107,3 +107,15 @@ Finglish: Ye environment variable ke be barname-haye graphical mige khoroojiashu
 ## Wayland
 English: A modern replacement for X11, built to fix X11's age and complexity. Wayland is more secure and simpler to maintain, and many distros now use it by default while keeping X11 as a fallback.
 Finglish: Ye jaygozin-e modern baraye X11, ke baraye fix kardan-e ghadimi budan va pichidegi-ye X11 sakhte shode. Wayland amniat-e bishtar va maintenance-e sadetari dare, va kheili az distro-ha alan be soorat-e default azash estefade mikonan va X11 ro be onvan-e fallback negah midaran.
+
+## Remote Desktop Protocols
+English: Several protocols let you connect to a GUI remotely:
+    X Forwarding (SSH) — runs a GUI program on a remote SSH server but displays it locally (ssh -X)
+    VNC (Virtual Network Computer) — cross-platform, uses the RFB protocol, default port is 5900 + display number (usually 5901). Flexible but lacks strong security.
+    Spice — open-sourced by RedHat in 2008, mainly used to connect to KVM virtual machines, fast and low CPU usage
+    RDP (Remote Desktop Protocol) — used via tools like Xrdp, default port 3389, encrypted by default, many free clients available
+Finglish: Chandin protocol vojud dare ke ejaze mide be ye GUI remote connect koni:
+    X Forwarding (SSH) — ye barname-e GUI ro rooye ye server-e SSH-e remote ejra mikone vali local display mikone (ssh -X)
+    VNC (Virtual Network Computer) — cross-platform, az protocol-e RFB estefade mikone, port-e default 5900 + shomare-ye display-e (maamoolan 5901). Flexible-e vali amniat-e ghavi nadare.
+    Spice — RedHat sal-e 2008 open-source-esh kard, bishtar baraye connect be virtual machine-haye KVM estefade mishe, sari' va CPU-e paeen
+    RDP (Remote Desktop Protocol) — az tarigh-e abzar-hayi mesle Xrdp estefade mishe, port-e default 3389, be soorat-e default encrypted-e, kheili client-e raygan mojude

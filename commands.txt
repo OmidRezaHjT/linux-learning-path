@@ -971,4 +971,7 @@ Finglish: Dastresi be X server ro faghat be ye IP-e remote-e khas mide.
 English: Manages the authorization tokens used to control access to the X server, based on a shared secret stored in ~/.Xauthority.(Common fix: deleting the .Xauthority file and restarting X can resolve broken X sessions)
 Finglish: Token-haye authorization ro modiriyat mikone ke baraye control-e dastresi be X server estefade mishan, bar asas-e ye secret-e moshtarek tooye ~/.Xauthority.(Fix-e rayej: pak kardan-e file-e .Xauthority va restart-e X mituneh session-haye kharab-e X ro fix kone)
 
-
+## SSH -X (X Forwarding)
+"ssh -X [server-address]"
+English: Connects to a remote SSH server with X forwarding enabled, letting GUI programs run remotely but display on your local machine.(Requires X11Forwarding yes in /etc/ssh/sshd_config on the server)
+Finglish: Be ye server-e SSH-e remote connect mishe ba X forwarding faal, taghire barname-haye GUI rooye server ejra beshan vali rooye machine-e local-e to display beshan.(Niaz be X11Forwarding yes tooye /etc/ssh/sshd_config-e server dare)
