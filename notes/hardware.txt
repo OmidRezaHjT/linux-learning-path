@@ -119,3 +119,51 @@ Finglish: Chandin protocol vojud dare ke ejaze mide be ye GUI remote connect kon
     VNC (Virtual Network Computer) — cross-platform, az protocol-e RFB estefade mikone, port-e default 5900 + shomare-ye display-e (maamoolan 5901). Flexible-e vali amniat-e ghavi nadare.
     Spice — RedHat sal-e 2008 open-source-esh kard, bishtar baraye connect be virtual machine-haye KVM estefade mishe, sari' va CPU-e paeen
     RDP (Remote Desktop Protocol) — az tarigh-e abzar-hayi mesle Xrdp estefade mishe, port-e default 3389, be soorat-e default encrypted-e, kheili client-e raygan mojude
+
+## Accessibility Technologies
+English: Linux offers three categories of accessibility support, available in display managers and major desktops (GNOME, KDE, XFCE):
+    AccessX — helps people with physical/motor difficulties use keyboard and mouse
+    Visual Settings — helps people with vision problems (magnification, high contrast, large text)
+    Assistive Technologies — text-to-speech (TTS), screen readers, and similar tools for visually impaired users
+Finglish: Linux se daste az accessibility support dare, ke tooye display manager-ha va desktop-haye asli (GNOME, KDE, XFCE) mojude:
+    AccessX — be afrad-i ke moshkel-e fiziki/harekati daran komak mikone keyboard va mouse ro estefade konan
+    Visual Settings — be afrad-i ke moshkel-e binai daran komak mikone (bozorg-namayi, high contrast, text-e bozorg)
+    Assistive Technologies — text-to-speech (TTS), screen reader va abzar-haye moshabeh baraye kar-baran-e visually impaired
+
+## GNOME Universal Access Options
+English: Found under Settings → Universal Access in GNOME, these are the main configurable options:
+    High Contrast — increases contrast between UI elements
+    Zoom — magnifies the screen
+    Large Text — increases text size system-wide
+    Screen Reader — reads screen content aloud
+    Screen Keyboard — displays an on-screen keyboard
+    Visual Alerts — flashes the screen instead of playing a beep sound
+    Sticky Keys — lets you press modifier keys (like Shift) one at a time instead of holding them (e.g. press Shift, then press a → capital A)
+    Slow Keys — ignores key repeat unless a key is held for a few seconds
+    Bounce Keys — ignores accidental rapid double key presses
+    Mouse Keys — lets the numeric keypad arrows control the mouse pointer
+    Simulate Secondary Click — right-click by holding down the primary click
+    Hover Click — clicks automatically when the pointer hovers over something
+Finglish: Zir-e Settings → Universal Access tooye GNOME peida mishan, in option-haye asli-e ghabel-e tanzim hastan:
+    High Contrast — contrast beyne elements-e UI ro ziad mikone
+    Zoom — safheh ro bozorg-namayi mikone
+    Large Text — andaze-ye text ro tooye kolle system ziad mikone
+    Screen Reader — mohtava-ye safheh ro bavaz mikhune
+    Screen Keyboard — ye keyboard rooye safheh neshun mide
+    Visual Alerts — be jaye pakhsh-e sedaye beep, safheh ro flash mikone
+    Sticky Keys — ejaze mide modifier key-ha (mesle Shift) ro yeki yeki bezani be jaye negah dashtanshun (masalan Shift bezani ba'ad a → A-e bozorg)
+    Slow Keys — repeat-e key ro nadide migire magar in ke key chand sanie negah dashte beshe
+    Bounce Keys — feshar-haye do-baare-ye sari' va tasadofi ro nadide migire
+    Mouse Keys — ejaze mide arrow-haye numeric keypad, pointer-e mouse ro control konan
+    Simulate Secondary Click — right-click ba negah dashtan-e click-e asli
+    Hover Click — vaghti pointer rooye chizi mimune, khodkar click mikone
+
+## TTS, Braille & Voice Recognition
+English: Additional assistive tools beyond desktop settings:
+    TTS (Text-To-Speech) — apps like Orca or Emacspeak read dialog boxes and screen content aloud
+    Braille Display — a physical device that outputs text as braille for visually impaired users; TTS/screen readers are often more practical when available
+    Voice Recognition — lets users control the OS by voice, increasingly effective and one of the best options for users with disabilities
+Finglish: Abzar-haye assistive-e ezafi ghair az tanzimat-e desktop:
+    TTS (Text-To-Speech) — app-hayi mesle Orca ya Emacspeak dialog box-ha va mohtava-ye safheh ro bavaz mikhunan
+    Braille Display — ye device-e fiziki ke text ro be soorat-e braille khoroji mide baraye kar-baran-e visually impaired; TTS/screen reader aksaran kar-amad-tar-an vaghti mojud bashan
+    Voice Recognition — ejaze mide kar-baran ba seda OS ro control kone, roozbe-rooz behtar mishe va yeki az behtarin option-ha baraye kar-baran-e ba ma'looliyat-e
